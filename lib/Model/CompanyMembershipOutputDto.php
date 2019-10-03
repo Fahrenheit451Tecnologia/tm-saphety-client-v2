@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * CompanyMembershipOutputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class CompanyMembershipOutputDto implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'company_id' => 'string',
         'virtual_operator_id' => 'string',
-        'roles' => '\Swagger\Client\Model\CompanyRoleDto[]'
+        'roles' => '\TM\Saphety\Clientv2\Model\CompanyRoleDto[]'
     ];
 
     /**
@@ -267,7 +267,7 @@ class CompanyMembershipOutputDto implements ModelInterface, ArrayAccess
     /**
      * Gets roles
      *
-     * @return \Swagger\Client\Model\CompanyRoleDto[]
+     * @return \TM\Saphety\Clientv2\Model\CompanyRoleDto[]
      */
     public function getRoles()
     {
@@ -277,7 +277,7 @@ class CompanyMembershipOutputDto implements ModelInterface, ArrayAccess
     /**
      * Sets roles
      *
-     * @param \Swagger\Client\Model\CompanyRoleDto[] $roles roles
+     * @param \TM\Saphety\Clientv2\Model\CompanyRoleDto[] $roles roles
      *
      * @return $this
      */

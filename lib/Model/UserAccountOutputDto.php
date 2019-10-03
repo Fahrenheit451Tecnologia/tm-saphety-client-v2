@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * UserAccountOutputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,9 +64,9 @@ class UserAccountOutputDto implements ModelInterface, ArrayAccess
         'name' => 'string',
         'language_code' => 'string',
         'timezone_code' => 'string',
-        'system_memberships' => '\Swagger\Client\Model\SystemMembershipOutputDto[]',
-        'virtual_operator_memberships' => '\Swagger\Client\Model\VirtualOperatorMembershipOutputDto[]',
-        'company_memberships' => '\Swagger\Client\Model\CompanyMembershipOutputDto[]'
+        'system_memberships' => '\TM\Saphety\Clientv2\Model\SystemMembershipOutputDto[]',
+        'virtual_operator_memberships' => '\TM\Saphety\Clientv2\Model\VirtualOperatorMembershipOutputDto[]',
+        'company_memberships' => '\TM\Saphety\Clientv2\Model\CompanyMembershipOutputDto[]'
     ];
 
     /**
@@ -429,7 +429,7 @@ class UserAccountOutputDto implements ModelInterface, ArrayAccess
     /**
      * Gets system_memberships
      *
-     * @return \Swagger\Client\Model\SystemMembershipOutputDto[]
+     * @return \TM\Saphety\Clientv2\Model\SystemMembershipOutputDto[]
      */
     public function getSystemMemberships()
     {
@@ -439,7 +439,7 @@ class UserAccountOutputDto implements ModelInterface, ArrayAccess
     /**
      * Sets system_memberships
      *
-     * @param \Swagger\Client\Model\SystemMembershipOutputDto[] $system_memberships system_memberships
+     * @param \TM\Saphety\Clientv2\Model\SystemMembershipOutputDto[] $system_memberships system_memberships
      *
      * @return $this
      */
@@ -453,7 +453,7 @@ class UserAccountOutputDto implements ModelInterface, ArrayAccess
     /**
      * Gets virtual_operator_memberships
      *
-     * @return \Swagger\Client\Model\VirtualOperatorMembershipOutputDto[]
+     * @return \TM\Saphety\Clientv2\Model\VirtualOperatorMembershipOutputDto[]
      */
     public function getVirtualOperatorMemberships()
     {
@@ -463,7 +463,7 @@ class UserAccountOutputDto implements ModelInterface, ArrayAccess
     /**
      * Sets virtual_operator_memberships
      *
-     * @param \Swagger\Client\Model\VirtualOperatorMembershipOutputDto[] $virtual_operator_memberships virtual_operator_memberships
+     * @param \TM\Saphety\Clientv2\Model\VirtualOperatorMembershipOutputDto[] $virtual_operator_memberships virtual_operator_memberships
      *
      * @return $this
      */
@@ -477,7 +477,7 @@ class UserAccountOutputDto implements ModelInterface, ArrayAccess
     /**
      * Gets company_memberships
      *
-     * @return \Swagger\Client\Model\CompanyMembershipOutputDto[]
+     * @return \TM\Saphety\Clientv2\Model\CompanyMembershipOutputDto[]
      */
     public function getCompanyMemberships()
     {
@@ -487,7 +487,7 @@ class UserAccountOutputDto implements ModelInterface, ArrayAccess
     /**
      * Sets company_memberships
      *
-     * @param \Swagger\Client\Model\CompanyMembershipOutputDto[] $company_memberships company_memberships
+     * @param \TM\Saphety\Clientv2\Model\CompanyMembershipOutputDto[] $company_memberships company_memberships
      *
      * @return $this
      */

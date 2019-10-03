@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client;
+namespace TM\Saphety\Clientv2;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -393,7 +393,7 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (Swagger\Client) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (TM\Saphety\Clientv2) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    OpenAPI Spec Version: 2_0_3_3' . PHP_EOL;

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * VirtualOperatorMembershipOutputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class VirtualOperatorMembershipOutputDto implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'virtual_operator_id' => 'string',
         'virtual_operator_alias' => 'string',
-        'roles' => '\Swagger\Client\Model\VirtualOperatorRoleOutputDto[]'
+        'roles' => '\TM\Saphety\Clientv2\Model\VirtualOperatorRoleOutputDto[]'
     ];
 
     /**
@@ -267,7 +267,7 @@ class VirtualOperatorMembershipOutputDto implements ModelInterface, ArrayAccess
     /**
      * Gets roles
      *
-     * @return \Swagger\Client\Model\VirtualOperatorRoleOutputDto[]
+     * @return \TM\Saphety\Clientv2\Model\VirtualOperatorRoleOutputDto[]
      */
     public function getRoles()
     {
@@ -277,7 +277,7 @@ class VirtualOperatorMembershipOutputDto implements ModelInterface, ArrayAccess
     /**
      * Sets roles
      *
-     * @param \Swagger\Client\Model\VirtualOperatorRoleOutputDto[] $roles roles
+     * @param \TM\Saphety\Clientv2\Model\VirtualOperatorRoleOutputDto[] $roles roles
      *
      * @return $this
      */

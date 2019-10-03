@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace TM\Saphety\Clientv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use TM\Saphety\Clientv2\ApiException;
+use TM\Saphety\Clientv2\Configuration;
+use TM\Saphety\Clientv2\HeaderSelector;
+use TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * AuthenticationApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,11 +92,11 @@ class AuthenticationApi
      *
      * Gets a authentication token given the requested data
      *
-     * @param  \Swagger\Client\Model\UserTokenRequestInputDto $token_request  (required)
+     * @param  \TM\Saphety\Clientv2\Model\UserTokenRequestInputDto $token_request  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageTokenOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageTokenOutputDto
      */
     public function authenticationGetToken($token_request)
     {
@@ -109,15 +109,15 @@ class AuthenticationApi
      *
      * Gets a authentication token given the requested data
      *
-     * @param  \Swagger\Client\Model\UserTokenRequestInputDto $token_request  (required)
+     * @param  \TM\Saphety\Clientv2\Model\UserTokenRequestInputDto $token_request  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageTokenOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageTokenOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function authenticationGetTokenWithHttpInfo($token_request)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageTokenOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageTokenOutputDto';
         $request = $this->authenticationGetTokenRequest($token_request);
 
         try {
@@ -169,7 +169,7 @@ class AuthenticationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageTokenOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageTokenOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -177,7 +177,7 @@ class AuthenticationApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageTokenOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageTokenOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class AuthenticationApi
      *
      * Gets a authentication token given the requested data
      *
-     * @param  \Swagger\Client\Model\UserTokenRequestInputDto $token_request  (required)
+     * @param  \TM\Saphety\Clientv2\Model\UserTokenRequestInputDto $token_request  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -212,14 +212,14 @@ class AuthenticationApi
      *
      * Gets a authentication token given the requested data
      *
-     * @param  \Swagger\Client\Model\UserTokenRequestInputDto $token_request  (required)
+     * @param  \TM\Saphety\Clientv2\Model\UserTokenRequestInputDto $token_request  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function authenticationGetTokenAsyncWithHttpInfo($token_request)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageTokenOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageTokenOutputDto';
         $request = $this->authenticationGetTokenRequest($token_request);
 
         return $this->client
@@ -262,7 +262,7 @@ class AuthenticationApi
     /**
      * Create request for operation 'authenticationGetToken'
      *
-     * @param  \Swagger\Client\Model\UserTokenRequestInputDto $token_request  (required)
+     * @param  \TM\Saphety\Clientv2\Model\UserTokenRequestInputDto $token_request  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

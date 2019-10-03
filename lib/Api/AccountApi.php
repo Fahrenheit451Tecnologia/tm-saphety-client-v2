@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace TM\Saphety\Clientv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use TM\Saphety\Clientv2\ApiException;
+use TM\Saphety\Clientv2\Configuration;
+use TM\Saphety\Clientv2\HeaderSelector;
+use TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * AccountApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class AccountApi
      * Gets the account information of the currently authenticated user
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageUserAccountOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageUserAccountOutputDto
      */
     public function accountGet()
     {
@@ -109,13 +109,13 @@ class AccountApi
      * Gets the account information of the currently authenticated user
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageUserAccountOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageUserAccountOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function accountGetWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageUserAccountOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageUserAccountOutputDto';
         $request = $this->accountGetRequest();
 
         try {
@@ -167,7 +167,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageUserAccountOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageUserAccountOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -175,7 +175,7 @@ class AccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageUserAccountOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageUserAccountOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class AccountApi
      */
     public function accountGetAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageUserAccountOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageUserAccountOutputDto';
         $request = $this->accountGetRequest();
 
         return $this->client
