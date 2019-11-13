@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * DeliveryInputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class DeliveryInputDto implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'delivery_location' => '\Swagger\Client\Model\DeliveryLocationInputDto'
+        'delivery_location' => '\TM\Saphety\Clientv2\Model\DeliveryLocationInputDto'
     ];
 
     /**
@@ -207,7 +207,7 @@ class DeliveryInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_location
      *
-     * @return \Swagger\Client\Model\DeliveryLocationInputDto
+     * @return \TM\Saphety\Clientv2\Model\DeliveryLocationInputDto
      */
     public function getDeliveryLocation()
     {
@@ -217,7 +217,7 @@ class DeliveryInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets delivery_location
      *
-     * @param \Swagger\Client\Model\DeliveryLocationInputDto $delivery_location delivery_location
+     * @param \TM\Saphety\Clientv2\Model\DeliveryLocationInputDto $delivery_location delivery_location
      *
      * @return $this
      */

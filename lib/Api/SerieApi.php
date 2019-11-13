@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace TM\Saphety\Clientv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use TM\Saphety\Clientv2\ApiException;
+use TM\Saphety\Clientv2\Configuration;
+use TM\Saphety\Clientv2\HeaderSelector;
+use TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * SerieApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListSerieOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto
      */
     public function getAll($virtual_operator, $company_id)
     {
@@ -113,13 +113,13 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAllWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto';
         $request = $this->getAllRequest($virtual_operator, $company_id);
 
         try {
@@ -171,7 +171,7 @@ class SerieApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -179,7 +179,7 @@ class SerieApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class SerieApi
      */
     public function getAllAsyncWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto';
         $request = $this->getAllRequest($virtual_operator, $company_id);
 
         return $this->client
@@ -393,9 +393,9 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListSerieOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto
      */
     public function getAllForContingencyInvoice($virtual_operator, $company_id)
     {
@@ -411,13 +411,13 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAllForContingencyInvoiceWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto';
         $request = $this->getAllForContingencyInvoiceRequest($virtual_operator, $company_id);
 
         try {
@@ -469,7 +469,7 @@ class SerieApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -477,7 +477,7 @@ class SerieApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -521,7 +521,7 @@ class SerieApi
      */
     public function getAllForContingencyInvoiceAsyncWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto';
         $request = $this->getAllForContingencyInvoiceRequest($virtual_operator, $company_id);
 
         return $this->client
@@ -691,9 +691,9 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListSerieOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto
      */
     public function getAllForCreditNote($virtual_operator, $company_id)
     {
@@ -709,13 +709,13 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAllForCreditNoteWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto';
         $request = $this->getAllForCreditNoteRequest($virtual_operator, $company_id);
 
         try {
@@ -767,7 +767,7 @@ class SerieApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -775,7 +775,7 @@ class SerieApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -819,7 +819,7 @@ class SerieApi
      */
     public function getAllForCreditNoteAsyncWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto';
         $request = $this->getAllForCreditNoteRequest($virtual_operator, $company_id);
 
         return $this->client
@@ -989,9 +989,9 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListSerieOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto
      */
     public function getAllForDebitNote($virtual_operator, $company_id)
     {
@@ -1007,13 +1007,13 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAllForDebitNoteWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto';
         $request = $this->getAllForDebitNoteRequest($virtual_operator, $company_id);
 
         try {
@@ -1065,7 +1065,7 @@ class SerieApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1073,7 +1073,7 @@ class SerieApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1117,7 +1117,7 @@ class SerieApi
      */
     public function getAllForDebitNoteAsyncWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto';
         $request = $this->getAllForDebitNoteRequest($virtual_operator, $company_id);
 
         return $this->client
@@ -1287,9 +1287,9 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListSerieOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto
      */
     public function getAllForSalesInvoice($virtual_operator, $company_id)
     {
@@ -1305,13 +1305,13 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAllForSalesInvoiceWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto';
         $request = $this->getAllForSalesInvoiceRequest($virtual_operator, $company_id);
 
         try {
@@ -1363,7 +1363,7 @@ class SerieApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1371,7 +1371,7 @@ class SerieApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1415,7 +1415,7 @@ class SerieApi
      */
     public function getAllForSalesInvoiceAsyncWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListSerieOutputDto';
         $request = $this->getAllForSalesInvoiceRequest($virtual_operator, $company_id);
 
         return $this->client
@@ -1585,9 +1585,9 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageInt32
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageInt32
      */
     public function getCount($virtual_operator, $company_id)
     {
@@ -1603,13 +1603,13 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageInt32, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageInt32, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCountWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageInt32';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageInt32';
         $request = $this->getCountRequest($virtual_operator, $company_id);
 
         try {
@@ -1661,7 +1661,7 @@ class SerieApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageInt32',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageInt32',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1669,7 +1669,7 @@ class SerieApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageInt32',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageInt32',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1713,7 +1713,7 @@ class SerieApi
      */
     public function getCountAsyncWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageInt32';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageInt32';
         $request = $this->getCountRequest($virtual_operator, $company_id);
 
         return $this->client
@@ -1883,9 +1883,9 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageDianSerieOutputDto_
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageDianSerieOutputDto_
      */
     public function getDianRegisteredSeries($virtual_operator, $company_id)
     {
@@ -1901,13 +1901,13 @@ class SerieApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $company_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageDianSerieOutputDto_, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageDianSerieOutputDto_, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDianRegisteredSeriesWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDianSerieOutputDto_';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDianSerieOutputDto_';
         $request = $this->getDianRegisteredSeriesRequest($virtual_operator, $company_id);
 
         try {
@@ -1959,7 +1959,7 @@ class SerieApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDianSerieOutputDto_',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDianSerieOutputDto_',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1967,7 +1967,7 @@ class SerieApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDianSerieOutputDto_',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDianSerieOutputDto_',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1975,7 +1975,7 @@ class SerieApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDianSerieOutputDto_',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDianSerieOutputDto_',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2019,7 +2019,7 @@ class SerieApi
      */
     public function getDianRegisteredSeriesAsyncWithHttpInfo($virtual_operator, $company_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDianSerieOutputDto_';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDianSerieOutputDto_';
         $request = $this->getDianRegisteredSeriesRequest($virtual_operator, $company_id);
 
         return $this->client
@@ -2190,9 +2190,9 @@ class SerieApi
      * @param  string $company_id  (required)
      * @param  string $id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageSerieOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageSerieOutputDto
      */
     public function serieDetails($virtual_operator, $company_id, $id)
     {
@@ -2209,13 +2209,13 @@ class SerieApi
      * @param  string $company_id  (required)
      * @param  string $id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageSerieOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function serieDetailsWithHttpInfo($virtual_operator, $company_id, $id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageSerieOutputDto';
         $request = $this->serieDetailsRequest($virtual_operator, $company_id, $id);
 
         try {
@@ -2267,7 +2267,7 @@ class SerieApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2275,7 +2275,7 @@ class SerieApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageSerieOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageSerieOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2321,7 +2321,7 @@ class SerieApi
      */
     public function serieDetailsAsyncWithHttpInfo($virtual_operator, $company_id, $id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageSerieOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageSerieOutputDto';
         $request = $this->serieDetailsRequest($virtual_operator, $company_id, $id);
 
         return $this->client

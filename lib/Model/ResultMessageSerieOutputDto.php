@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * ResultMessageSerieOutputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class ResultMessageSerieOutputDto implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'is_valid' => 'bool',
-        'warnings' => '\Swagger\Client\Model\ValidationWarning[]',
-        'errors' => '\Swagger\Client\Model\ValidationError[]',
-        'result_data' => '\Swagger\Client\Model\SerieOutputDto',
+        'warnings' => '\TM\Saphety\Clientv2\Model\ValidationWarning[]',
+        'errors' => '\TM\Saphety\Clientv2\Model\ValidationError[]',
+        'result_data' => '\TM\Saphety\Clientv2\Model\SerieOutputDto',
         'result_code' => 'int'
     ];
 
@@ -255,7 +255,7 @@ class ResultMessageSerieOutputDto implements ModelInterface, ArrayAccess
     /**
      * Gets warnings
      *
-     * @return \Swagger\Client\Model\ValidationWarning[]
+     * @return \TM\Saphety\Clientv2\Model\ValidationWarning[]
      */
     public function getWarnings()
     {
@@ -265,7 +265,7 @@ class ResultMessageSerieOutputDto implements ModelInterface, ArrayAccess
     /**
      * Sets warnings
      *
-     * @param \Swagger\Client\Model\ValidationWarning[] $warnings warnings
+     * @param \TM\Saphety\Clientv2\Model\ValidationWarning[] $warnings warnings
      *
      * @return $this
      */
@@ -279,7 +279,7 @@ class ResultMessageSerieOutputDto implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ValidationError[]
+     * @return \TM\Saphety\Clientv2\Model\ValidationError[]
      */
     public function getErrors()
     {
@@ -289,7 +289,7 @@ class ResultMessageSerieOutputDto implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ValidationError[] $errors errors
+     * @param \TM\Saphety\Clientv2\Model\ValidationError[] $errors errors
      *
      * @return $this
      */
@@ -303,7 +303,7 @@ class ResultMessageSerieOutputDto implements ModelInterface, ArrayAccess
     /**
      * Gets result_data
      *
-     * @return \Swagger\Client\Model\SerieOutputDto
+     * @return \TM\Saphety\Clientv2\Model\SerieOutputDto
      */
     public function getResultData()
     {
@@ -313,7 +313,7 @@ class ResultMessageSerieOutputDto implements ModelInterface, ArrayAccess
     /**
      * Sets result_data
      *
-     * @param \Swagger\Client\Model\SerieOutputDto $result_data result_data
+     * @param \TM\Saphety\Clientv2\Model\SerieOutputDto $result_data result_data
      *
      * @return $this
      */

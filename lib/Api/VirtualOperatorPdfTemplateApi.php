@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace TM\Saphety\Clientv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use TM\Saphety\Clientv2\ApiException;
+use TM\Saphety\Clientv2\Configuration;
+use TM\Saphety\Clientv2\HeaderSelector;
+use TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * VirtualOperatorPdfTemplateApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -100,9 +100,9 @@ class VirtualOperatorPdfTemplateApi
      * @param  int $number_of_records number_of_records (optional)
      * @param  string $sort_field sort_field (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageInt32
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageInt32
      */
     public function virtualOperatorPdfTemplateControllerCount($virtual_operator, $template_key = null, $name = null, $document_type = null, $offset = null, $number_of_records = null, $sort_field = null)
     {
@@ -123,13 +123,13 @@ class VirtualOperatorPdfTemplateApi
      * @param  int $number_of_records (optional)
      * @param  string $sort_field (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageInt32, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageInt32, HTTP status code, HTTP response headers (array of strings)
      */
     public function virtualOperatorPdfTemplateControllerCountWithHttpInfo($virtual_operator, $template_key = null, $name = null, $document_type = null, $offset = null, $number_of_records = null, $sort_field = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageInt32';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageInt32';
         $request = $this->virtualOperatorPdfTemplateControllerCountRequest($virtual_operator, $template_key, $name, $document_type, $offset, $number_of_records, $sort_field);
 
         try {
@@ -181,7 +181,7 @@ class VirtualOperatorPdfTemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageInt32',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageInt32',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class VirtualOperatorPdfTemplateApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageInt32',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageInt32',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -243,7 +243,7 @@ class VirtualOperatorPdfTemplateApi
      */
     public function virtualOperatorPdfTemplateControllerCountAsyncWithHttpInfo($virtual_operator, $template_key = null, $name = null, $document_type = null, $offset = null, $number_of_records = null, $sort_field = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageInt32';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageInt32';
         $request = $this->virtualOperatorPdfTemplateControllerCountRequest($virtual_operator, $template_key, $name, $document_type, $offset, $number_of_records, $sort_field);
 
         return $this->client
@@ -433,9 +433,9 @@ class VirtualOperatorPdfTemplateApi
      * @param  int $number_of_records number_of_records (optional)
      * @param  string $sort_field sort_field (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListPdfTemplateOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListPdfTemplateOutputDto
      */
     public function virtualOperatorPdfTemplateControllerGetAllTemplates($virtual_operator, $document_type = null, $document_sub_type = null, $include_content = null, $offset = null, $number_of_records = null, $sort_field = null)
     {
@@ -456,13 +456,13 @@ class VirtualOperatorPdfTemplateApi
      * @param  int $number_of_records (optional)
      * @param  string $sort_field (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListPdfTemplateOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListPdfTemplateOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function virtualOperatorPdfTemplateControllerGetAllTemplatesWithHttpInfo($virtual_operator, $document_type = null, $document_sub_type = null, $include_content = null, $offset = null, $number_of_records = null, $sort_field = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListPdfTemplateOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListPdfTemplateOutputDto';
         $request = $this->virtualOperatorPdfTemplateControllerGetAllTemplatesRequest($virtual_operator, $document_type, $document_sub_type, $include_content, $offset, $number_of_records, $sort_field);
 
         try {
@@ -514,7 +514,7 @@ class VirtualOperatorPdfTemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListPdfTemplateOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListPdfTemplateOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -522,7 +522,7 @@ class VirtualOperatorPdfTemplateApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListPdfTemplateOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListPdfTemplateOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -576,7 +576,7 @@ class VirtualOperatorPdfTemplateApi
      */
     public function virtualOperatorPdfTemplateControllerGetAllTemplatesAsyncWithHttpInfo($virtual_operator, $document_type = null, $document_sub_type = null, $include_content = null, $offset = null, $number_of_records = null, $sort_field = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListPdfTemplateOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListPdfTemplateOutputDto';
         $request = $this->virtualOperatorPdfTemplateControllerGetAllTemplatesRequest($virtual_operator, $document_type, $document_sub_type, $include_content, $offset, $number_of_records, $sort_field);
 
         return $this->client
@@ -761,9 +761,9 @@ class VirtualOperatorPdfTemplateApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessagePdfTemplateOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessagePdfTemplateOutputDto
      */
     public function virtualOperatorPdfTemplateControllerGetTemplate($virtual_operator, $id)
     {
@@ -779,13 +779,13 @@ class VirtualOperatorPdfTemplateApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessagePdfTemplateOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessagePdfTemplateOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function virtualOperatorPdfTemplateControllerGetTemplateWithHttpInfo($virtual_operator, $id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessagePdfTemplateOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessagePdfTemplateOutputDto';
         $request = $this->virtualOperatorPdfTemplateControllerGetTemplateRequest($virtual_operator, $id);
 
         try {
@@ -837,7 +837,7 @@ class VirtualOperatorPdfTemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessagePdfTemplateOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessagePdfTemplateOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -845,7 +845,7 @@ class VirtualOperatorPdfTemplateApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessagePdfTemplateOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessagePdfTemplateOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -889,7 +889,7 @@ class VirtualOperatorPdfTemplateApi
      */
     public function virtualOperatorPdfTemplateControllerGetTemplateAsyncWithHttpInfo($virtual_operator, $id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessagePdfTemplateOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessagePdfTemplateOutputDto';
         $request = $this->virtualOperatorPdfTemplateControllerGetTemplateRequest($virtual_operator, $id);
 
         return $this->client
@@ -1064,9 +1064,9 @@ class VirtualOperatorPdfTemplateApi
      * @param  int $number_of_records number_of_records (optional)
      * @param  string $sort_field sort_field (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListTemplateSearchOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListTemplateSearchOutputDto
      */
     public function virtualOperatorPdfTemplateControllerSearch($virtual_operator, $template_key = null, $name = null, $document_type = null, $offset = null, $number_of_records = null, $sort_field = null)
     {
@@ -1087,13 +1087,13 @@ class VirtualOperatorPdfTemplateApi
      * @param  int $number_of_records (optional)
      * @param  string $sort_field (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListTemplateSearchOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListTemplateSearchOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function virtualOperatorPdfTemplateControllerSearchWithHttpInfo($virtual_operator, $template_key = null, $name = null, $document_type = null, $offset = null, $number_of_records = null, $sort_field = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListTemplateSearchOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListTemplateSearchOutputDto';
         $request = $this->virtualOperatorPdfTemplateControllerSearchRequest($virtual_operator, $template_key, $name, $document_type, $offset, $number_of_records, $sort_field);
 
         try {
@@ -1145,7 +1145,7 @@ class VirtualOperatorPdfTemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListTemplateSearchOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListTemplateSearchOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1153,7 +1153,7 @@ class VirtualOperatorPdfTemplateApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListTemplateSearchOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListTemplateSearchOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1207,7 +1207,7 @@ class VirtualOperatorPdfTemplateApi
      */
     public function virtualOperatorPdfTemplateControllerSearchAsyncWithHttpInfo($virtual_operator, $template_key = null, $name = null, $document_type = null, $offset = null, $number_of_records = null, $sort_field = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListTemplateSearchOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListTemplateSearchOutputDto';
         $request = $this->virtualOperatorPdfTemplateControllerSearchRequest($virtual_operator, $template_key, $name, $document_type, $offset, $number_of_records, $sort_field);
 
         return $this->client

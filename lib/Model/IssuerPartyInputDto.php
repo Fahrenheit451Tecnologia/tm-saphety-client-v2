@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * IssuerPartyInputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class IssuerPartyInputDto implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'document_contacts' => '\Swagger\Client\Model\DocumentContactInputDto[]',
-        'identification' => '\Swagger\Client\Model\IdentificationInputDto'
+        'document_contacts' => '\TM\Saphety\Clientv2\Model\DocumentContactInputDto[]',
+        'identification' => '\TM\Saphety\Clientv2\Model\IdentificationInputDto'
     ];
 
     /**
@@ -216,7 +216,7 @@ class IssuerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets document_contacts
      *
-     * @return \Swagger\Client\Model\DocumentContactInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\DocumentContactInputDto[]
      */
     public function getDocumentContacts()
     {
@@ -226,7 +226,7 @@ class IssuerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets document_contacts
      *
-     * @param \Swagger\Client\Model\DocumentContactInputDto[] $document_contacts document_contacts
+     * @param \TM\Saphety\Clientv2\Model\DocumentContactInputDto[] $document_contacts document_contacts
      *
      * @return $this
      */
@@ -240,7 +240,7 @@ class IssuerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets identification
      *
-     * @return \Swagger\Client\Model\IdentificationInputDto
+     * @return \TM\Saphety\Clientv2\Model\IdentificationInputDto
      */
     public function getIdentification()
     {
@@ -250,7 +250,7 @@ class IssuerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets identification
      *
-     * @param \Swagger\Client\Model\IdentificationInputDto $identification identification
+     * @param \TM\Saphety\Clientv2\Model\IdentificationInputDto $identification identification
      *
      * @return $this
      */

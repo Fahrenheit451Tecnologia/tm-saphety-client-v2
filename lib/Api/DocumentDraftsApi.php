@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace TM\Saphety\Clientv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use TM\Saphety\Clientv2\ApiException;
+use TM\Saphety\Clientv2\Configuration;
+use TM\Saphety\Clientv2\HeaderSelector;
+use TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * DocumentDraftsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,11 +93,11 @@ class DocumentDraftsApi
      * Gets the document draft count
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageInt32
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageInt32
      */
     public function count($virtual_operator, $document_drafts_search_criteria = null)
     {
@@ -111,15 +111,15 @@ class DocumentDraftsApi
      * Gets the document draft count
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageInt32, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageInt32, HTTP status code, HTTP response headers (array of strings)
      */
     public function countWithHttpInfo($virtual_operator, $document_drafts_search_criteria = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageInt32';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageInt32';
         $request = $this->countRequest($virtual_operator, $document_drafts_search_criteria);
 
         try {
@@ -171,7 +171,7 @@ class DocumentDraftsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageInt32',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageInt32',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -179,7 +179,7 @@ class DocumentDraftsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageInt32',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageInt32',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -195,7 +195,7 @@ class DocumentDraftsApi
      * Gets the document draft count
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,14 +216,14 @@ class DocumentDraftsApi
      * Gets the document draft count
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function countAsyncWithHttpInfo($virtual_operator, $document_drafts_search_criteria = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageInt32';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageInt32';
         $request = $this->countRequest($virtual_operator, $document_drafts_search_criteria);
 
         return $this->client
@@ -267,7 +267,7 @@ class DocumentDraftsApi
      * Create request for operation 'count'
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -382,9 +382,9 @@ class DocumentDraftsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageDocumentDraftOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageDocumentDraftOutputDto
      */
     public function get($virtual_operator, $id)
     {
@@ -400,13 +400,13 @@ class DocumentDraftsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageDocumentDraftOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageDocumentDraftOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWithHttpInfo($virtual_operator, $id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentDraftOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentDraftOutputDto';
         $request = $this->getRequest($virtual_operator, $id);
 
         try {
@@ -458,7 +458,7 @@ class DocumentDraftsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentDraftOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentDraftOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -466,7 +466,7 @@ class DocumentDraftsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentDraftOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentDraftOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -510,7 +510,7 @@ class DocumentDraftsApi
      */
     public function getAsyncWithHttpInfo($virtual_operator, $id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentDraftOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentDraftOutputDto';
         $request = $this->getRequest($virtual_operator, $id);
 
         return $this->client
@@ -678,11 +678,11 @@ class DocumentDraftsApi
      * Searchs for document drafts
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDocumentDraftOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDocumentDraftOutputDto
      */
     public function search($virtual_operator, $document_drafts_search_criteria = null)
     {
@@ -696,15 +696,15 @@ class DocumentDraftsApi
      * Searchs for document drafts
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDocumentDraftOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDocumentDraftOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchWithHttpInfo($virtual_operator, $document_drafts_search_criteria = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDocumentDraftOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentDraftOutputDto';
         $request = $this->searchRequest($virtual_operator, $document_drafts_search_criteria);
 
         try {
@@ -756,7 +756,7 @@ class DocumentDraftsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDocumentDraftOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentDraftOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -764,7 +764,7 @@ class DocumentDraftsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDocumentDraftOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentDraftOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -780,7 +780,7 @@ class DocumentDraftsApi
      * Searchs for document drafts
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -801,14 +801,14 @@ class DocumentDraftsApi
      * Searchs for document drafts
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function searchAsyncWithHttpInfo($virtual_operator, $document_drafts_search_criteria = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDocumentDraftOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentDraftOutputDto';
         $request = $this->searchRequest($virtual_operator, $document_drafts_search_criteria);
 
         return $this->client
@@ -852,7 +852,7 @@ class DocumentDraftsApi
      * Create request for operation 'search'
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentDraftsSearchCriteriaInputDto $document_drafts_search_criteria  (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

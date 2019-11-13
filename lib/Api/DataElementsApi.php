@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace TM\Saphety\Clientv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use TM\Saphety\Clientv2\ApiException;
+use TM\Saphety\Clientv2\Configuration;
+use TM\Saphety\Clientv2\HeaderSelector;
+use TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * DataElementsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class DataElementsApi
      * Gets all AllowanceCharges.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function allowanceChargeCodeTypes()
     {
@@ -109,13 +109,13 @@ class DataElementsApi
      * Gets all AllowanceCharges.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function allowanceChargeCodeTypesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->allowanceChargeCodeTypesRequest();
 
         try {
@@ -167,7 +167,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -175,7 +175,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class DataElementsApi
      */
     public function allowanceChargeCodeTypesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->allowanceChargeCodeTypesRequest();
 
         return $this->client
@@ -349,9 +349,9 @@ class DataElementsApi
      * Gets all CountryCodes.  ISO_3166-1
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function countryCodes()
     {
@@ -365,13 +365,13 @@ class DataElementsApi
      * Gets all CountryCodes.  ISO_3166-1
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function countryCodesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->countryCodesRequest();
 
         try {
@@ -423,7 +423,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -431,7 +431,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -471,7 +471,7 @@ class DataElementsApi
      */
     public function countryCodesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->countryCodesRequest();
 
         return $this->client
@@ -605,9 +605,9 @@ class DataElementsApi
      * Gets all CreditNoteReasons.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function creditNoteReasons()
     {
@@ -621,13 +621,13 @@ class DataElementsApi
      * Gets all CreditNoteReasons.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function creditNoteReasonsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->creditNoteReasonsRequest();
 
         try {
@@ -679,7 +679,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -687,7 +687,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -727,7 +727,7 @@ class DataElementsApi
      */
     public function creditNoteReasonsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->creditNoteReasonsRequest();
 
         return $this->client
@@ -861,9 +861,9 @@ class DataElementsApi
      * Gets all Currencies.  urn:un:unece:uncefact:codelist:specification:54217:2001
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function currencies()
     {
@@ -877,13 +877,13 @@ class DataElementsApi
      * Gets all Currencies.  urn:un:unece:uncefact:codelist:specification:54217:2001
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function currenciesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->currenciesRequest();
 
         try {
@@ -935,7 +935,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -943,7 +943,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -983,7 +983,7 @@ class DataElementsApi
      */
     public function currenciesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->currenciesRequest();
 
         return $this->client
@@ -1117,9 +1117,9 @@ class DataElementsApi
      * Gets all DebitNoteReasons.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function debitNoteReasons()
     {
@@ -1133,13 +1133,13 @@ class DataElementsApi
      * Gets all DebitNoteReasons.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function debitNoteReasonsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->debitNoteReasonsRequest();
 
         try {
@@ -1191,7 +1191,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1199,7 +1199,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1239,7 +1239,7 @@ class DataElementsApi
      */
     public function debitNoteReasonsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->debitNoteReasonsRequest();
 
         return $this->client
@@ -1373,9 +1373,9 @@ class DataElementsApi
      * Gets all DocReferenceTypes.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function docReferenceTypes()
     {
@@ -1389,13 +1389,13 @@ class DataElementsApi
      * Gets all DocReferenceTypes.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function docReferenceTypesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->docReferenceTypesRequest();
 
         try {
@@ -1447,7 +1447,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1455,7 +1455,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1495,7 +1495,7 @@ class DataElementsApi
      */
     public function docReferenceTypesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->docReferenceTypesRequest();
 
         return $this->client
@@ -1629,9 +1629,9 @@ class DataElementsApi
      * Gets all DocumentSubTypes.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function documentSubTypes()
     {
@@ -1645,13 +1645,13 @@ class DataElementsApi
      * Gets all DocumentSubTypes.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function documentSubTypesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->documentSubTypesRequest();
 
         try {
@@ -1703,7 +1703,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1711,7 +1711,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1751,7 +1751,7 @@ class DataElementsApi
      */
     public function documentSubTypesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->documentSubTypesRequest();
 
         return $this->client
@@ -1885,9 +1885,9 @@ class DataElementsApi
      * Gets all DocumentTypes.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function documentTypes()
     {
@@ -1901,13 +1901,13 @@ class DataElementsApi
      * Gets all DocumentTypes.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function documentTypesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->documentTypesRequest();
 
         try {
@@ -1959,7 +1959,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1967,7 +1967,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2007,7 +2007,7 @@ class DataElementsApi
      */
     public function documentTypesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->documentTypesRequest();
 
         return $this->client
@@ -2141,9 +2141,9 @@ class DataElementsApi
      * Gets all OutboundDocument Reference Types for lines.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function getDocLineReferenceTypes()
     {
@@ -2157,13 +2157,13 @@ class DataElementsApi
      * Gets all OutboundDocument Reference Types for lines.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDocLineReferenceTypesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->getDocLineReferenceTypesRequest();
 
         try {
@@ -2215,7 +2215,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2223,7 +2223,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2263,7 +2263,7 @@ class DataElementsApi
      */
     public function getDocLineReferenceTypesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->getDocLineReferenceTypesRequest();
 
         return $this->client
@@ -2397,9 +2397,9 @@ class DataElementsApi
      * Gets all OutboundDocument Operation Types.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function getDocumentOperationTypes()
     {
@@ -2413,13 +2413,13 @@ class DataElementsApi
      * Gets all OutboundDocument Operation Types.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDocumentOperationTypesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->getDocumentOperationTypesRequest();
 
         try {
@@ -2471,7 +2471,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2479,7 +2479,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2519,7 +2519,7 @@ class DataElementsApi
      */
     public function getDocumentOperationTypesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->getDocumentOperationTypesRequest();
 
         return $this->client
@@ -2653,9 +2653,9 @@ class DataElementsApi
      * Gets all Formas Pago types
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function getFormasPago()
     {
@@ -2669,13 +2669,13 @@ class DataElementsApi
      * Gets all Formas Pago types
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFormasPagoWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->getFormasPagoRequest();
 
         try {
@@ -2727,7 +2727,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2735,7 +2735,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2775,7 +2775,7 @@ class DataElementsApi
      */
     public function getFormasPagoAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->getFormasPagoRequest();
 
         return $this->client
@@ -2909,9 +2909,9 @@ class DataElementsApi
      * Gets all Medios Pago types
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function getMediosPagoTypes()
     {
@@ -2925,13 +2925,13 @@ class DataElementsApi
      * Gets all Medios Pago types
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function getMediosPagoTypesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->getMediosPagoTypesRequest();
 
         try {
@@ -2983,7 +2983,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2991,7 +2991,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3031,7 +3031,7 @@ class DataElementsApi
      */
     public function getMediosPagoTypesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->getMediosPagoTypesRequest();
 
         return $this->client
@@ -3165,9 +3165,9 @@ class DataElementsApi
      * Gets all OutboundDocumentStatuses.   This values are used to search for documents
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function outboundDocumentStatuses()
     {
@@ -3181,13 +3181,13 @@ class DataElementsApi
      * Gets all OutboundDocumentStatuses.   This values are used to search for documents
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function outboundDocumentStatusesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->outboundDocumentStatusesRequest();
 
         try {
@@ -3239,7 +3239,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3247,7 +3247,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3287,7 +3287,7 @@ class DataElementsApi
      */
     public function outboundDocumentStatusesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->outboundDocumentStatusesRequest();
 
         return $this->client
@@ -3421,9 +3421,9 @@ class DataElementsApi
      * Gets all OutboundDocumentStatusesExtended.  This values are returned when return a document status
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function outboundDocumentStatusesExtended()
     {
@@ -3437,13 +3437,13 @@ class DataElementsApi
      * Gets all OutboundDocumentStatusesExtended.  This values are returned when return a document status
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function outboundDocumentStatusesExtendedWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->outboundDocumentStatusesExtendedRequest();
 
         try {
@@ -3495,7 +3495,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3503,7 +3503,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3543,7 +3543,7 @@ class DataElementsApi
      */
     public function outboundDocumentStatusesExtendedAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->outboundDocumentStatusesExtendedRequest();
 
         return $this->client
@@ -3677,9 +3677,9 @@ class DataElementsApi
      * Gets all QualificationDocumentStatuses.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function qualificationDocumentStatuses()
     {
@@ -3693,13 +3693,13 @@ class DataElementsApi
      * Gets all QualificationDocumentStatuses.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function qualificationDocumentStatusesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->qualificationDocumentStatusesRequest();
 
         try {
@@ -3751,7 +3751,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3759,7 +3759,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3799,7 +3799,7 @@ class DataElementsApi
      */
     public function qualificationDocumentStatusesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->qualificationDocumentStatusesRequest();
 
         return $this->client
@@ -3933,9 +3933,9 @@ class DataElementsApi
      * Gets all TaxCategories.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function taxCategories()
     {
@@ -3949,13 +3949,13 @@ class DataElementsApi
      * Gets all TaxCategories.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function taxCategoriesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->taxCategoriesRequest();
 
         try {
@@ -4007,7 +4007,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4015,7 +4015,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4055,7 +4055,7 @@ class DataElementsApi
      */
     public function taxCategoriesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->taxCategoriesRequest();
 
         return $this->client
@@ -4189,9 +4189,9 @@ class DataElementsApi
      * Gets all UnitOfMeasure.   CodeList_UnitCode_UNECE_7_04
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function unitsOfMeasure()
     {
@@ -4205,13 +4205,13 @@ class DataElementsApi
      * Gets all UnitOfMeasure.   CodeList_UnitCode_UNECE_7_04
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function unitsOfMeasureWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->unitsOfMeasureRequest();
 
         try {
@@ -4263,7 +4263,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4271,7 +4271,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4311,7 +4311,7 @@ class DataElementsApi
      */
     public function unitsOfMeasureAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->unitsOfMeasureRequest();
 
         return $this->client
@@ -4445,9 +4445,9 @@ class DataElementsApi
      * Gets all UnitOfMeasure.   CodeList_UnitCode_UNECE_7_04
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function unitsOfMeasureSimplified()
     {
@@ -4461,13 +4461,13 @@ class DataElementsApi
      * Gets all UnitOfMeasure.   CodeList_UnitCode_UNECE_7_04
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function unitsOfMeasureSimplifiedWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->unitsOfMeasureSimplifiedRequest();
 
         try {
@@ -4519,7 +4519,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4527,7 +4527,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4567,7 +4567,7 @@ class DataElementsApi
      */
     public function unitsOfMeasureSimplifiedAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->unitsOfMeasureSimplifiedRequest();
 
         return $this->client
@@ -4701,9 +4701,9 @@ class DataElementsApi
      * Gets all WithholdingTaxes.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDataElement
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDataElement
      */
     public function withholdingTaxes()
     {
@@ -4717,13 +4717,13 @@ class DataElementsApi
      * Gets all WithholdingTaxes.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDataElement, HTTP status code, HTTP response headers (array of strings)
      */
     public function withholdingTaxesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->withholdingTaxesRequest();
 
         try {
@@ -4775,7 +4775,7 @@ class DataElementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4783,7 +4783,7 @@ class DataElementsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDataElement',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4823,7 +4823,7 @@ class DataElementsApi
      */
     public function withholdingTaxesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDataElement';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDataElement';
         $request = $this->withholdingTaxesRequest();
 
         return $this->client

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace TM\Saphety\Clientv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use TM\Saphety\Clientv2\ApiException;
+use TM\Saphety\Clientv2\Configuration;
+use TM\Saphety\Clientv2\HeaderSelector;
+use TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * DocumentsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class DocumentsApi
      * Operation count
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentSearchCriteriaInputDto $input_dto input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentSearchCriteriaInputDto $input_dto input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageInt32
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageInt32
      */
     public function count($virtual_operator, $input_dto = null)
     {
@@ -107,15 +107,15 @@ class DocumentsApi
      * Operation countWithHttpInfo
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageInt32, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageInt32, HTTP status code, HTTP response headers (array of strings)
      */
     public function countWithHttpInfo($virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageInt32';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageInt32';
         $request = $this->countRequest($virtual_operator, $input_dto);
 
         try {
@@ -167,7 +167,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageInt32',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageInt32',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -175,7 +175,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageInt32',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageInt32',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -191,7 +191,7 @@ class DocumentsApi
      * 
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -212,14 +212,14 @@ class DocumentsApi
      * 
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function countAsyncWithHttpInfo($virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageInt32';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageInt32';
         $request = $this->countRequest($virtual_operator, $input_dto);
 
         return $this->client
@@ -263,7 +263,7 @@ class DocumentsApi
      * Create request for operation 'count'
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,11 +374,11 @@ class DocumentsApi
      * Operation cude
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\CudeInputDto $input_dto input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\CudeInputDto $input_dto input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageString
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageString
      */
     public function cude($virtual_operator, $input_dto = null)
     {
@@ -390,15 +390,15 @@ class DocumentsApi
      * Operation cudeWithHttpInfo
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\CudeInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\CudeInputDto $input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageString, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageString, HTTP status code, HTTP response headers (array of strings)
      */
     public function cudeWithHttpInfo($virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageString';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageString';
         $request = $this->cudeRequest($virtual_operator, $input_dto);
 
         try {
@@ -450,7 +450,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageString',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageString',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -458,7 +458,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageString',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageString',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -474,7 +474,7 @@ class DocumentsApi
      * 
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\CudeInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\CudeInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -495,14 +495,14 @@ class DocumentsApi
      * 
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\CudeInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\CudeInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function cudeAsyncWithHttpInfo($virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageString';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageString';
         $request = $this->cudeRequest($virtual_operator, $input_dto);
 
         return $this->client
@@ -546,7 +546,7 @@ class DocumentsApi
      * Create request for operation 'cude'
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\CudeInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\CudeInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -657,11 +657,11 @@ class DocumentsApi
      * Operation cufe
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\CufeInputDto $input_dto input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\CufeInputDto $input_dto input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageString
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageString
      */
     public function cufe($virtual_operator, $input_dto = null)
     {
@@ -673,15 +673,15 @@ class DocumentsApi
      * Operation cufeWithHttpInfo
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\CufeInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\CufeInputDto $input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageString, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageString, HTTP status code, HTTP response headers (array of strings)
      */
     public function cufeWithHttpInfo($virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageString';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageString';
         $request = $this->cufeRequest($virtual_operator, $input_dto);
 
         try {
@@ -733,7 +733,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageString',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageString',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -741,7 +741,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageString',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageString',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -757,7 +757,7 @@ class DocumentsApi
      * 
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\CufeInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\CufeInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -778,14 +778,14 @@ class DocumentsApi
      * 
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\CufeInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\CufeInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function cufeAsyncWithHttpInfo($virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageString';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageString';
         $request = $this->cufeRequest($virtual_operator, $input_dto);
 
         return $this->client
@@ -829,7 +829,7 @@ class DocumentsApi
      * Create request for operation 'cufe'
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\CufeInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\CufeInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -942,9 +942,9 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageDocumentSearchServiceOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageDocumentSearchServiceOutputDto
      */
     public function details($virtual_operator, $document_id)
     {
@@ -958,13 +958,13 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageDocumentSearchServiceOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageDocumentSearchServiceOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function detailsWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentSearchServiceOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentSearchServiceOutputDto';
         $request = $this->detailsRequest($virtual_operator, $document_id);
 
         try {
@@ -1016,7 +1016,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentSearchServiceOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentSearchServiceOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1024,7 +1024,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentSearchServiceOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentSearchServiceOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1068,7 +1068,7 @@ class DocumentsApi
      */
     public function detailsAsyncWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentSearchServiceOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentSearchServiceOutputDto';
         $request = $this->detailsRequest($virtual_operator, $document_id);
 
         return $this->client
@@ -1236,9 +1236,9 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageDocumentFileOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto
      */
     public function getAttachedDocument($virtual_operator, $document_id)
     {
@@ -1252,13 +1252,13 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageDocumentFileOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAttachedDocumentWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto';
         $request = $this->getAttachedDocumentRequest($virtual_operator, $document_id);
 
         try {
@@ -1310,7 +1310,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1318,7 +1318,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1362,7 +1362,7 @@ class DocumentsApi
      */
     public function getAttachedDocumentAsyncWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto';
         $request = $this->getAttachedDocumentRequest($virtual_operator, $document_id);
 
         return $this->client
@@ -1531,7 +1531,7 @@ class DocumentsApi
      * @param  string $document_id document_id (required)
      * @param  bool $disposition_inline disposition_inline (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1548,7 +1548,7 @@ class DocumentsApi
      * @param  string $document_id (required)
      * @param  bool $disposition_inline (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1834,9 +1834,9 @@ class DocumentsApi
      * @param  string $document_id document_id (required)
      * @param  bool $get_content get_content (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDocumentAttachmentOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDocumentAttachmentOutputDto
      */
     public function getAttachments($virtual_operator, $document_id, $get_content)
     {
@@ -1851,13 +1851,13 @@ class DocumentsApi
      * @param  string $document_id (required)
      * @param  bool $get_content (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDocumentAttachmentOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDocumentAttachmentOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAttachmentsWithHttpInfo($virtual_operator, $document_id, $get_content)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDocumentAttachmentOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentAttachmentOutputDto';
         $request = $this->getAttachmentsRequest($virtual_operator, $document_id, $get_content);
 
         try {
@@ -1909,7 +1909,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDocumentAttachmentOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentAttachmentOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1917,7 +1917,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDocumentAttachmentOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentAttachmentOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1963,7 +1963,7 @@ class DocumentsApi
      */
     public function getAttachmentsAsyncWithHttpInfo($virtual_operator, $document_id, $get_content)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDocumentAttachmentOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentAttachmentOutputDto';
         $request = $this->getAttachmentsRequest($virtual_operator, $document_id, $get_content);
 
         return $this->client
@@ -2148,9 +2148,9 @@ class DocumentsApi
      * @param  string $attachment_id attachment_id (required)
      * @param  bool $get_content get_content (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageDocumentAttachmentOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageDocumentAttachmentOutputDto
      */
     public function getAttachmentsById($virtual_operator, $document_id, $attachment_id, $get_content)
     {
@@ -2166,13 +2166,13 @@ class DocumentsApi
      * @param  string $attachment_id (required)
      * @param  bool $get_content (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageDocumentAttachmentOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageDocumentAttachmentOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAttachmentsByIdWithHttpInfo($virtual_operator, $document_id, $attachment_id, $get_content)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentAttachmentOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentAttachmentOutputDto';
         $request = $this->getAttachmentsByIdRequest($virtual_operator, $document_id, $attachment_id, $get_content);
 
         try {
@@ -2224,7 +2224,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentAttachmentOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentAttachmentOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2232,7 +2232,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentAttachmentOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentAttachmentOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2280,7 +2280,7 @@ class DocumentsApi
      */
     public function getAttachmentsByIdAsyncWithHttpInfo($virtual_operator, $document_id, $attachment_id, $get_content)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentAttachmentOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentAttachmentOutputDto';
         $request = $this->getAttachmentsByIdRequest($virtual_operator, $document_id, $attachment_id, $get_content);
 
         return $this->client
@@ -2478,9 +2478,9 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageDocumentFileOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto
      */
     public function getDto($virtual_operator, $document_id)
     {
@@ -2494,13 +2494,13 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageDocumentFileOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDtoWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto';
         $request = $this->getDtoRequest($virtual_operator, $document_id);
 
         try {
@@ -2552,7 +2552,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2560,7 +2560,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2604,7 +2604,7 @@ class DocumentsApi
      */
     public function getDtoAsyncWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto';
         $request = $this->getDtoRequest($virtual_operator, $document_id);
 
         return $this->client
@@ -2773,7 +2773,7 @@ class DocumentsApi
      * @param  string $document_id document_id (required)
      * @param  bool $disposition_inline disposition_inline (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -2790,7 +2790,7 @@ class DocumentsApi
      * @param  string $document_id (required)
      * @param  bool $disposition_inline (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3075,9 +3075,9 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDocumentFileOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDocumentFileOutputDto
      */
     public function getFiles($virtual_operator, $document_id)
     {
@@ -3091,13 +3091,13 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDocumentFileOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDocumentFileOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFilesWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDocumentFileOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentFileOutputDto';
         $request = $this->getFilesRequest($virtual_operator, $document_id);
 
         try {
@@ -3149,7 +3149,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDocumentFileOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentFileOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3157,7 +3157,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDocumentFileOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentFileOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3201,7 +3201,7 @@ class DocumentsApi
      */
     public function getFilesAsyncWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDocumentFileOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentFileOutputDto';
         $request = $this->getFilesRequest($virtual_operator, $document_id);
 
         return $this->client
@@ -3369,9 +3369,9 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageDocumentFileOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto
      */
     public function getPdf($virtual_operator, $document_id)
     {
@@ -3385,13 +3385,13 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageDocumentFileOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPdfWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto';
         $request = $this->getPdfRequest($virtual_operator, $document_id);
 
         try {
@@ -3443,7 +3443,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3451,7 +3451,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3495,7 +3495,7 @@ class DocumentsApi
      */
     public function getPdfAsyncWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto';
         $request = $this->getPdfRequest($virtual_operator, $document_id);
 
         return $this->client
@@ -3664,7 +3664,7 @@ class DocumentsApi
      * @param  string $document_id document_id (required)
      * @param  bool $disposition_inline disposition_inline (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -3681,7 +3681,7 @@ class DocumentsApi
      * @param  string $document_id (required)
      * @param  bool $disposition_inline (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3966,9 +3966,9 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListGetStatusOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListGetStatusOutputDto
      */
     public function getStatus($virtual_operator, $document_id)
     {
@@ -3982,13 +3982,13 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListGetStatusOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListGetStatusOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStatusWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListGetStatusOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListGetStatusOutputDto';
         $request = $this->getStatusRequest($virtual_operator, $document_id);
 
         try {
@@ -4040,7 +4040,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListGetStatusOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListGetStatusOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4048,7 +4048,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListGetStatusOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListGetStatusOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4092,7 +4092,7 @@ class DocumentsApi
      */
     public function getStatusAsyncWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListGetStatusOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListGetStatusOutputDto';
         $request = $this->getStatusRequest($virtual_operator, $document_id);
 
         return $this->client
@@ -4260,9 +4260,9 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageDocumentFileOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto
      */
     public function getUbl($virtual_operator, $document_id)
     {
@@ -4276,13 +4276,13 @@ class DocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageDocumentFileOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUblWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto';
         $request = $this->getUblRequest($virtual_operator, $document_id);
 
         try {
@@ -4334,7 +4334,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4342,7 +4342,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4386,7 +4386,7 @@ class DocumentsApi
      */
     public function getUblAsyncWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentFileOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFileOutputDto';
         $request = $this->getUblRequest($virtual_operator, $document_id);
 
         return $this->client
@@ -4555,7 +4555,7 @@ class DocumentsApi
      * @param  string $document_id document_id (required)
      * @param  bool $disposition_inline disposition_inline (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -4572,7 +4572,7 @@ class DocumentsApi
      * @param  string $document_id (required)
      * @param  bool $disposition_inline (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4855,11 +4855,11 @@ class DocumentsApi
      * Operation search
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentSearchCriteriaInputDto $input_dto input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentSearchCriteriaInputDto $input_dto input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListDocumentSearchServiceOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListDocumentSearchServiceOutputDto
      */
     public function search($virtual_operator, $input_dto = null)
     {
@@ -4871,15 +4871,15 @@ class DocumentsApi
      * Operation searchWithHttpInfo
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListDocumentSearchServiceOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListDocumentSearchServiceOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchWithHttpInfo($virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDocumentSearchServiceOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentSearchServiceOutputDto';
         $request = $this->searchRequest($virtual_operator, $input_dto);
 
         try {
@@ -4931,7 +4931,7 @@ class DocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDocumentSearchServiceOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentSearchServiceOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4939,7 +4939,7 @@ class DocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListDocumentSearchServiceOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentSearchServiceOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4955,7 +4955,7 @@ class DocumentsApi
      * 
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4976,14 +4976,14 @@ class DocumentsApi
      * 
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function searchAsyncWithHttpInfo($virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListDocumentSearchServiceOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListDocumentSearchServiceOutputDto';
         $request = $this->searchRequest($virtual_operator, $input_dto);
 
         return $this->client
@@ -5027,7 +5027,7 @@ class DocumentsApi
      * Create request for operation 'search'
      *
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\DocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

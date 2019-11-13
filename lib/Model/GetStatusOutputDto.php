@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * GetStatusOutputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GetStatusOutputDto implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'status' => 'string',
-        'validation_errors' => '\Swagger\Client\Model\ValidationError[]'
+        'validation_errors' => '\TM\Saphety\Clientv2\Model\ValidationError[]'
     ];
 
     /**
@@ -237,7 +237,7 @@ class GetStatusOutputDto implements ModelInterface, ArrayAccess
     /**
      * Gets validation_errors
      *
-     * @return \Swagger\Client\Model\ValidationError[]
+     * @return \TM\Saphety\Clientv2\Model\ValidationError[]
      */
     public function getValidationErrors()
     {
@@ -247,7 +247,7 @@ class GetStatusOutputDto implements ModelInterface, ArrayAccess
     /**
      * Sets validation_errors
      *
-     * @param \Swagger\Client\Model\ValidationError[] $validation_errors validation_errors
+     * @param \TM\Saphety\Clientv2\Model\ValidationError[] $validation_errors validation_errors
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace TM\Saphety\Clientv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use TM\Saphety\Clientv2\ApiException;
+use TM\Saphety\Clientv2\Configuration;
+use TM\Saphety\Clientv2\HeaderSelector;
+use TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * ToolsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,11 +90,11 @@ class ToolsApi
     /**
      * Operation testPdfTemplate
      *
-     * @param  \Swagger\Client\Model\TestPdfTemplateInputDto $dto dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\TestPdfTemplateInputDto $dto dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageDocumentFile
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageDocumentFile
      */
     public function testPdfTemplate($dto = null)
     {
@@ -105,15 +105,15 @@ class ToolsApi
     /**
      * Operation testPdfTemplateWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\TestPdfTemplateInputDto $dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\TestPdfTemplateInputDto $dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageDocumentFile, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageDocumentFile, HTTP status code, HTTP response headers (array of strings)
      */
     public function testPdfTemplateWithHttpInfo($dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentFile';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFile';
         $request = $this->testPdfTemplateRequest($dto);
 
         try {
@@ -165,7 +165,7 @@ class ToolsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentFile',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFile',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -173,7 +173,7 @@ class ToolsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageDocumentFile',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFile',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class ToolsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\TestPdfTemplateInputDto $dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\TestPdfTemplateInputDto $dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -208,14 +208,14 @@ class ToolsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\TestPdfTemplateInputDto $dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\TestPdfTemplateInputDto $dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function testPdfTemplateAsyncWithHttpInfo($dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageDocumentFile';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageDocumentFile';
         $request = $this->testPdfTemplateRequest($dto);
 
         return $this->client
@@ -258,7 +258,7 @@ class ToolsApi
     /**
      * Create request for operation 'testPdfTemplate'
      *
-     * @param  \Swagger\Client\Model\TestPdfTemplateInputDto $dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\TestPdfTemplateInputDto $dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

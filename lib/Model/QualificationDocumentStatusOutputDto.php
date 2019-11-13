@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * QualificationDocumentStatusOutputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class QualificationDocumentStatusOutputDto implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'result' => '\Swagger\Client\Model\QualificationDocumentStatusResultDto[]'
+        'result' => '\TM\Saphety\Clientv2\Model\QualificationDocumentStatusResultDto[]'
     ];
 
     /**
@@ -207,7 +207,7 @@ class QualificationDocumentStatusOutputDto implements ModelInterface, ArrayAcces
     /**
      * Gets result
      *
-     * @return \Swagger\Client\Model\QualificationDocumentStatusResultDto[]
+     * @return \TM\Saphety\Clientv2\Model\QualificationDocumentStatusResultDto[]
      */
     public function getResult()
     {
@@ -217,7 +217,7 @@ class QualificationDocumentStatusOutputDto implements ModelInterface, ArrayAcces
     /**
      * Sets result
      *
-     * @param \Swagger\Client\Model\QualificationDocumentStatusResultDto[] $result result
+     * @param \TM\Saphety\Clientv2\Model\QualificationDocumentStatusResultDto[] $result result
      *
      * @return $this
      */

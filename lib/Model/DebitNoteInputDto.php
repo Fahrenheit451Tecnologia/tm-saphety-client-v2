@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * DebitNoteInputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,35 +60,35 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
         'document_root' => 'string',
         'document_type' => 'string',
         'create_audit_event_type' => 'string',
-        'billing_period' => '\Swagger\Client\Model\PeriodInputDto',
+        'billing_period' => '\TM\Saphety\Clientv2\Model\PeriodInputDto',
         'reason_debit' => 'string',
         'payment_method' => 'string',
         'delivery_date' => 'string',
         'serie_prefix' => 'string',
         'serie_number' => 'string',
-        'issuer_party' => '\Swagger\Client\Model\IssuerPartyInputDto',
-        'customer_party' => '\Swagger\Client\Model\CustomerPartyInputDto',
+        'issuer_party' => '\TM\Saphety\Clientv2\Model\IssuerPartyInputDto',
+        'customer_party' => '\TM\Saphety\Clientv2\Model\CustomerPartyInputDto',
         'notes' => 'string[]',
         'currency' => 'string',
-        'lines' => '\Swagger\Client\Model\LineInputDto[]',
-        'tax_sub_totals' => '\Swagger\Client\Model\TaxSubTotalInputDto[]',
-        'tax_totals' => '\Swagger\Client\Model\TaxTotalInputDto[]',
-        'total' => '\Swagger\Client\Model\LegalMonetaryTotalInputDto',
+        'lines' => '\TM\Saphety\Clientv2\Model\LineInputDto[]',
+        'tax_sub_totals' => '\TM\Saphety\Clientv2\Model\TaxSubTotalInputDto[]',
+        'tax_totals' => '\TM\Saphety\Clientv2\Model\TaxTotalInputDto[]',
+        'total' => '\TM\Saphety\Clientv2\Model\LegalMonetaryTotalInputDto',
         'issue_date' => 'string',
         'due_date' => 'string',
         'external_reference' => 'string',
         'correlation_document_id' => 'string',
         'serie_external_key' => 'string',
         'additional_notification_emails' => 'string[]',
-        'document_references' => '\Swagger\Client\Model\DocumentReferenceInputDto[]',
-        'graphical_representation_custom_fields' => '\Swagger\Client\Model\CustomFieldInputDto[]',
-        'attachments' => '\Swagger\Client\Model\DocumentAttachmentInputDto[]',
-        'pdf_data' => '\Swagger\Client\Model\OutboundDocumentPdfInputDto',
-        'prepaid_payments' => '\Swagger\Client\Model\PrepaidPaymentInputDto[]',
-        'payment_exchange_rate' => '\Swagger\Client\Model\PaymentExchangeRateInputDto',
-        'payment_means' => '\Swagger\Client\Model\PaymentMeanInputDto[]',
-        'payment_terms' => '\Swagger\Client\Model\PaymentTermInputDto[]',
-        'allowance_charges' => '\Swagger\Client\Model\AllowanceChargeInputDto[]',
+        'document_references' => '\TM\Saphety\Clientv2\Model\DocumentReferenceInputDto[]',
+        'graphical_representation_custom_fields' => '\TM\Saphety\Clientv2\Model\CustomFieldInputDto[]',
+        'attachments' => '\TM\Saphety\Clientv2\Model\DocumentAttachmentInputDto[]',
+        'pdf_data' => '\TM\Saphety\Clientv2\Model\OutboundDocumentPdfInputDto',
+        'prepaid_payments' => '\TM\Saphety\Clientv2\Model\PrepaidPaymentInputDto[]',
+        'payment_exchange_rate' => '\TM\Saphety\Clientv2\Model\PaymentExchangeRateInputDto',
+        'payment_means' => '\TM\Saphety\Clientv2\Model\PaymentMeanInputDto[]',
+        'payment_terms' => '\TM\Saphety\Clientv2\Model\PaymentTermInputDto[]',
+        'allowance_charges' => '\TM\Saphety\Clientv2\Model\AllowanceChargeInputDto[]',
         'operation_type' => 'string'
     ];
 
@@ -621,7 +621,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets billing_period
      *
-     * @return \Swagger\Client\Model\PeriodInputDto
+     * @return \TM\Saphety\Clientv2\Model\PeriodInputDto
      */
     public function getBillingPeriod()
     {
@@ -631,7 +631,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets billing_period
      *
-     * @param \Swagger\Client\Model\PeriodInputDto $billing_period billing_period
+     * @param \TM\Saphety\Clientv2\Model\PeriodInputDto $billing_period billing_period
      *
      * @return $this
      */
@@ -765,7 +765,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets issuer_party
      *
-     * @return \Swagger\Client\Model\IssuerPartyInputDto
+     * @return \TM\Saphety\Clientv2\Model\IssuerPartyInputDto
      */
     public function getIssuerParty()
     {
@@ -775,7 +775,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets issuer_party
      *
-     * @param \Swagger\Client\Model\IssuerPartyInputDto $issuer_party issuer_party
+     * @param \TM\Saphety\Clientv2\Model\IssuerPartyInputDto $issuer_party issuer_party
      *
      * @return $this
      */
@@ -789,7 +789,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets customer_party
      *
-     * @return \Swagger\Client\Model\CustomerPartyInputDto
+     * @return \TM\Saphety\Clientv2\Model\CustomerPartyInputDto
      */
     public function getCustomerParty()
     {
@@ -799,7 +799,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets customer_party
      *
-     * @param \Swagger\Client\Model\CustomerPartyInputDto $customer_party customer_party
+     * @param \TM\Saphety\Clientv2\Model\CustomerPartyInputDto $customer_party customer_party
      *
      * @return $this
      */
@@ -861,7 +861,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\LineInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\LineInputDto[]
      */
     public function getLines()
     {
@@ -871,7 +871,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\LineInputDto[] $lines lines
+     * @param \TM\Saphety\Clientv2\Model\LineInputDto[] $lines lines
      *
      * @return $this
      */
@@ -885,7 +885,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets tax_sub_totals
      *
-     * @return \Swagger\Client\Model\TaxSubTotalInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\TaxSubTotalInputDto[]
      */
     public function getTaxSubTotals()
     {
@@ -895,7 +895,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets tax_sub_totals
      *
-     * @param \Swagger\Client\Model\TaxSubTotalInputDto[] $tax_sub_totals tax_sub_totals
+     * @param \TM\Saphety\Clientv2\Model\TaxSubTotalInputDto[] $tax_sub_totals tax_sub_totals
      *
      * @return $this
      */
@@ -909,7 +909,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets tax_totals
      *
-     * @return \Swagger\Client\Model\TaxTotalInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\TaxTotalInputDto[]
      */
     public function getTaxTotals()
     {
@@ -919,7 +919,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets tax_totals
      *
-     * @param \Swagger\Client\Model\TaxTotalInputDto[] $tax_totals tax_totals
+     * @param \TM\Saphety\Clientv2\Model\TaxTotalInputDto[] $tax_totals tax_totals
      *
      * @return $this
      */
@@ -933,7 +933,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets total
      *
-     * @return \Swagger\Client\Model\LegalMonetaryTotalInputDto
+     * @return \TM\Saphety\Clientv2\Model\LegalMonetaryTotalInputDto
      */
     public function getTotal()
     {
@@ -943,7 +943,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets total
      *
-     * @param \Swagger\Client\Model\LegalMonetaryTotalInputDto $total total
+     * @param \TM\Saphety\Clientv2\Model\LegalMonetaryTotalInputDto $total total
      *
      * @return $this
      */
@@ -1109,7 +1109,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets document_references
      *
-     * @return \Swagger\Client\Model\DocumentReferenceInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\DocumentReferenceInputDto[]
      */
     public function getDocumentReferences()
     {
@@ -1119,7 +1119,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets document_references
      *
-     * @param \Swagger\Client\Model\DocumentReferenceInputDto[] $document_references document_references
+     * @param \TM\Saphety\Clientv2\Model\DocumentReferenceInputDto[] $document_references document_references
      *
      * @return $this
      */
@@ -1133,7 +1133,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets graphical_representation_custom_fields
      *
-     * @return \Swagger\Client\Model\CustomFieldInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\CustomFieldInputDto[]
      */
     public function getGraphicalRepresentationCustomFields()
     {
@@ -1143,7 +1143,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets graphical_representation_custom_fields
      *
-     * @param \Swagger\Client\Model\CustomFieldInputDto[] $graphical_representation_custom_fields graphical_representation_custom_fields
+     * @param \TM\Saphety\Clientv2\Model\CustomFieldInputDto[] $graphical_representation_custom_fields graphical_representation_custom_fields
      *
      * @return $this
      */
@@ -1157,7 +1157,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets attachments
      *
-     * @return \Swagger\Client\Model\DocumentAttachmentInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\DocumentAttachmentInputDto[]
      */
     public function getAttachments()
     {
@@ -1167,7 +1167,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets attachments
      *
-     * @param \Swagger\Client\Model\DocumentAttachmentInputDto[] $attachments attachments
+     * @param \TM\Saphety\Clientv2\Model\DocumentAttachmentInputDto[] $attachments attachments
      *
      * @return $this
      */
@@ -1181,7 +1181,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets pdf_data
      *
-     * @return \Swagger\Client\Model\OutboundDocumentPdfInputDto
+     * @return \TM\Saphety\Clientv2\Model\OutboundDocumentPdfInputDto
      */
     public function getPdfData()
     {
@@ -1191,7 +1191,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets pdf_data
      *
-     * @param \Swagger\Client\Model\OutboundDocumentPdfInputDto $pdf_data (Updated DIAN 2 Property)
+     * @param \TM\Saphety\Clientv2\Model\OutboundDocumentPdfInputDto $pdf_data (Updated DIAN 2 Property)
      *
      * @return $this
      */
@@ -1205,7 +1205,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets prepaid_payments
      *
-     * @return \Swagger\Client\Model\PrepaidPaymentInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\PrepaidPaymentInputDto[]
      */
     public function getPrepaidPayments()
     {
@@ -1215,7 +1215,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets prepaid_payments
      *
-     * @param \Swagger\Client\Model\PrepaidPaymentInputDto[] $prepaid_payments prepaid_payments
+     * @param \TM\Saphety\Clientv2\Model\PrepaidPaymentInputDto[] $prepaid_payments prepaid_payments
      *
      * @return $this
      */
@@ -1229,7 +1229,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets payment_exchange_rate
      *
-     * @return \Swagger\Client\Model\PaymentExchangeRateInputDto
+     * @return \TM\Saphety\Clientv2\Model\PaymentExchangeRateInputDto
      */
     public function getPaymentExchangeRate()
     {
@@ -1239,7 +1239,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets payment_exchange_rate
      *
-     * @param \Swagger\Client\Model\PaymentExchangeRateInputDto $payment_exchange_rate payment_exchange_rate
+     * @param \TM\Saphety\Clientv2\Model\PaymentExchangeRateInputDto $payment_exchange_rate payment_exchange_rate
      *
      * @return $this
      */
@@ -1253,7 +1253,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets payment_means
      *
-     * @return \Swagger\Client\Model\PaymentMeanInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\PaymentMeanInputDto[]
      */
     public function getPaymentMeans()
     {
@@ -1263,7 +1263,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets payment_means
      *
-     * @param \Swagger\Client\Model\PaymentMeanInputDto[] $payment_means payment_means
+     * @param \TM\Saphety\Clientv2\Model\PaymentMeanInputDto[] $payment_means payment_means
      *
      * @return $this
      */
@@ -1277,7 +1277,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets payment_terms
      *
-     * @return \Swagger\Client\Model\PaymentTermInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\PaymentTermInputDto[]
      */
     public function getPaymentTerms()
     {
@@ -1287,7 +1287,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets payment_terms
      *
-     * @param \Swagger\Client\Model\PaymentTermInputDto[] $payment_terms payment_terms
+     * @param \TM\Saphety\Clientv2\Model\PaymentTermInputDto[] $payment_terms payment_terms
      *
      * @return $this
      */
@@ -1301,7 +1301,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets allowance_charges
      *
-     * @return \Swagger\Client\Model\AllowanceChargeInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\AllowanceChargeInputDto[]
      */
     public function getAllowanceCharges()
     {
@@ -1311,7 +1311,7 @@ class DebitNoteInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets allowance_charges
      *
-     * @param \Swagger\Client\Model\AllowanceChargeInputDto[] $allowance_charges allowance_charges
+     * @param \TM\Saphety\Clientv2\Model\AllowanceChargeInputDto[] $allowance_charges allowance_charges
      *
      * @return $this
      */

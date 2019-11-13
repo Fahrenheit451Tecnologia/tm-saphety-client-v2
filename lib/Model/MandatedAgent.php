@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * MandatedAgent Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class MandatedAgent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identification' => '\Swagger\Client\Model\IdentificationInputDto'
+        'identification' => '\TM\Saphety\Clientv2\Model\IdentificationInputDto'
     ];
 
     /**
@@ -210,7 +210,7 @@ class MandatedAgent implements ModelInterface, ArrayAccess
     /**
      * Gets identification
      *
-     * @return \Swagger\Client\Model\IdentificationInputDto
+     * @return \TM\Saphety\Clientv2\Model\IdentificationInputDto
      */
     public function getIdentification()
     {
@@ -220,7 +220,7 @@ class MandatedAgent implements ModelInterface, ArrayAccess
     /**
      * Sets identification
      *
-     * @param \Swagger\Client\Model\IdentificationInputDto $identification identification
+     * @param \TM\Saphety\Clientv2\Model\IdentificationInputDto $identification identification
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * ItemInputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -68,7 +68,7 @@ class ItemInputDto implements ModelInterface, ArrayAccess
         'pack_quantity' => 'string',
         'pack_unit_of_measure' => 'string',
         'units_per_package' => 'string',
-        'gas_and_oil_properties' => '\Swagger\Client\Model\GasAndOilInputDto[]',
+        'gas_and_oil_properties' => '\TM\Saphety\Clientv2\Model\GasAndOilInputDto[]',
         'height' => 'string',
         'height_unit_of_measure' => 'string',
         'width' => 'string',
@@ -79,8 +79,8 @@ class ItemInputDto implements ModelInterface, ArrayAccess
         'volume_unit_of_measure' => 'string',
         'lot_number' => 'string',
         'expiry_date' => 'string',
-        'car_industry' => '\Swagger\Client\Model\CarIndustryInputDto',
-        'mandated_agent' => '\Swagger\Client\Model\MandatedAgent'
+        'car_industry' => '\TM\Saphety\Clientv2\Model\CarIndustryInputDto',
+        'mandated_agent' => '\TM\Saphety\Clientv2\Model\MandatedAgent'
     ];
 
     /**
@@ -712,7 +712,7 @@ class ItemInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets gas_and_oil_properties
      *
-     * @return \Swagger\Client\Model\GasAndOilInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\GasAndOilInputDto[]
      */
     public function getGasAndOilProperties()
     {
@@ -722,7 +722,7 @@ class ItemInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets gas_and_oil_properties
      *
-     * @param \Swagger\Client\Model\GasAndOilInputDto[] $gas_and_oil_properties gas_and_oil_properties
+     * @param \TM\Saphety\Clientv2\Model\GasAndOilInputDto[] $gas_and_oil_properties gas_and_oil_properties
      *
      * @return $this
      */
@@ -996,7 +996,7 @@ class ItemInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets car_industry
      *
-     * @return \Swagger\Client\Model\CarIndustryInputDto
+     * @return \TM\Saphety\Clientv2\Model\CarIndustryInputDto
      */
     public function getCarIndustry()
     {
@@ -1006,7 +1006,7 @@ class ItemInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets car_industry
      *
-     * @param \Swagger\Client\Model\CarIndustryInputDto $car_industry car_industry
+     * @param \TM\Saphety\Clientv2\Model\CarIndustryInputDto $car_industry car_industry
      *
      * @return $this
      */
@@ -1020,7 +1020,7 @@ class ItemInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets mandated_agent
      *
-     * @return \Swagger\Client\Model\MandatedAgent
+     * @return \TM\Saphety\Clientv2\Model\MandatedAgent
      */
     public function getMandatedAgent()
     {
@@ -1030,7 +1030,7 @@ class ItemInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets mandated_agent
      *
-     * @param \Swagger\Client\Model\MandatedAgent $mandated_agent mandated_agent
+     * @param \TM\Saphety\Clientv2\Model\MandatedAgent $mandated_agent mandated_agent
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * LineInputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,20 +61,20 @@ class LineInputDto implements ModelInterface, ArrayAccess
         'accounting_cost_code' => 'string',
         'quantity' => 'string',
         'quantity_unit_of_measure' => 'string',
-        'tax_sub_totals' => '\Swagger\Client\Model\TaxSubTotalInputDto[]',
-        'tax_totals' => '\Swagger\Client\Model\TaxTotalInputDto[]',
+        'tax_sub_totals' => '\TM\Saphety\Clientv2\Model\TaxSubTotalInputDto[]',
+        'tax_totals' => '\TM\Saphety\Clientv2\Model\TaxTotalInputDto[]',
         'exclude_vat' => 'string',
-        'withholding_tax_sub_totals' => '\Swagger\Client\Model\WithholdingTaxSubTotalInputDto[]',
-        'withholding_tax_totals' => '\Swagger\Client\Model\WithholdingTaxTotalInputDto[]',
+        'withholding_tax_sub_totals' => '\TM\Saphety\Clientv2\Model\WithholdingTaxSubTotalInputDto[]',
+        'withholding_tax_totals' => '\TM\Saphety\Clientv2\Model\WithholdingTaxTotalInputDto[]',
         'unit_price' => 'string',
         'gross_amount' => 'string',
         'net_amount' => 'string',
-        'allowance_charges' => '\Swagger\Client\Model\AllowanceChargeInputDto[]',
-        'document_references' => '\Swagger\Client\Model\DocumentReferenceInputDto[]',
-        'document_line_references' => '\Swagger\Client\Model\DocumentLineReferenceInputDto[]',
-        'item' => '\Swagger\Client\Model\ItemInputDto',
+        'allowance_charges' => '\TM\Saphety\Clientv2\Model\AllowanceChargeInputDto[]',
+        'document_references' => '\TM\Saphety\Clientv2\Model\DocumentReferenceInputDto[]',
+        'document_line_references' => '\TM\Saphety\Clientv2\Model\DocumentLineReferenceInputDto[]',
+        'item' => '\TM\Saphety\Clientv2\Model\ItemInputDto',
         'note' => 'string',
-        'delivery' => '\Swagger\Client\Model\DeliveryInputDto'
+        'delivery' => '\TM\Saphety\Clientv2\Model\DeliveryInputDto'
     ];
 
     /**
@@ -438,7 +438,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets tax_sub_totals
      *
-     * @return \Swagger\Client\Model\TaxSubTotalInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\TaxSubTotalInputDto[]
      */
     public function getTaxSubTotals()
     {
@@ -448,7 +448,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets tax_sub_totals
      *
-     * @param \Swagger\Client\Model\TaxSubTotalInputDto[] $tax_sub_totals tax_sub_totals
+     * @param \TM\Saphety\Clientv2\Model\TaxSubTotalInputDto[] $tax_sub_totals tax_sub_totals
      *
      * @return $this
      */
@@ -462,7 +462,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets tax_totals
      *
-     * @return \Swagger\Client\Model\TaxTotalInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\TaxTotalInputDto[]
      */
     public function getTaxTotals()
     {
@@ -472,7 +472,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets tax_totals
      *
-     * @param \Swagger\Client\Model\TaxTotalInputDto[] $tax_totals tax_totals
+     * @param \TM\Saphety\Clientv2\Model\TaxTotalInputDto[] $tax_totals tax_totals
      *
      * @return $this
      */
@@ -510,7 +510,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets withholding_tax_sub_totals
      *
-     * @return \Swagger\Client\Model\WithholdingTaxSubTotalInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\WithholdingTaxSubTotalInputDto[]
      */
     public function getWithholdingTaxSubTotals()
     {
@@ -520,7 +520,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets withholding_tax_sub_totals
      *
-     * @param \Swagger\Client\Model\WithholdingTaxSubTotalInputDto[] $withholding_tax_sub_totals withholding_tax_sub_totals
+     * @param \TM\Saphety\Clientv2\Model\WithholdingTaxSubTotalInputDto[] $withholding_tax_sub_totals withholding_tax_sub_totals
      *
      * @return $this
      */
@@ -534,7 +534,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets withholding_tax_totals
      *
-     * @return \Swagger\Client\Model\WithholdingTaxTotalInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\WithholdingTaxTotalInputDto[]
      */
     public function getWithholdingTaxTotals()
     {
@@ -544,7 +544,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets withholding_tax_totals
      *
-     * @param \Swagger\Client\Model\WithholdingTaxTotalInputDto[] $withholding_tax_totals withholding_tax_totals
+     * @param \TM\Saphety\Clientv2\Model\WithholdingTaxTotalInputDto[] $withholding_tax_totals withholding_tax_totals
      *
      * @return $this
      */
@@ -630,7 +630,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets allowance_charges
      *
-     * @return \Swagger\Client\Model\AllowanceChargeInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\AllowanceChargeInputDto[]
      */
     public function getAllowanceCharges()
     {
@@ -640,7 +640,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets allowance_charges
      *
-     * @param \Swagger\Client\Model\AllowanceChargeInputDto[] $allowance_charges allowance_charges
+     * @param \TM\Saphety\Clientv2\Model\AllowanceChargeInputDto[] $allowance_charges allowance_charges
      *
      * @return $this
      */
@@ -654,7 +654,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets document_references
      *
-     * @return \Swagger\Client\Model\DocumentReferenceInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\DocumentReferenceInputDto[]
      */
     public function getDocumentReferences()
     {
@@ -664,7 +664,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets document_references
      *
-     * @param \Swagger\Client\Model\DocumentReferenceInputDto[] $document_references document_references
+     * @param \TM\Saphety\Clientv2\Model\DocumentReferenceInputDto[] $document_references document_references
      *
      * @return $this
      */
@@ -678,7 +678,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets document_line_references
      *
-     * @return \Swagger\Client\Model\DocumentLineReferenceInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\DocumentLineReferenceInputDto[]
      */
     public function getDocumentLineReferences()
     {
@@ -688,7 +688,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets document_line_references
      *
-     * @param \Swagger\Client\Model\DocumentLineReferenceInputDto[] $document_line_references document_line_references
+     * @param \TM\Saphety\Clientv2\Model\DocumentLineReferenceInputDto[] $document_line_references document_line_references
      *
      * @return $this
      */
@@ -702,7 +702,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Swagger\Client\Model\ItemInputDto
+     * @return \TM\Saphety\Clientv2\Model\ItemInputDto
      */
     public function getItem()
     {
@@ -712,7 +712,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Swagger\Client\Model\ItemInputDto $item item
+     * @param \TM\Saphety\Clientv2\Model\ItemInputDto $item item
      *
      * @return $this
      */
@@ -754,7 +754,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets delivery
      *
-     * @return \Swagger\Client\Model\DeliveryInputDto
+     * @return \TM\Saphety\Clientv2\Model\DeliveryInputDto
      */
     public function getDelivery()
     {
@@ -764,7 +764,7 @@ class LineInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets delivery
      *
-     * @param \Swagger\Client\Model\DeliveryInputDto $delivery delivery
+     * @param \TM\Saphety\Clientv2\Model\DeliveryInputDto $delivery delivery
      *
      * @return $this
      */

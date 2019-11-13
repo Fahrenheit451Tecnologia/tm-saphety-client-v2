@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace TM\Saphety\Clientv2\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use TM\Saphety\Clientv2\ApiException;
+use TM\Saphety\Clientv2\Configuration;
+use TM\Saphety\Clientv2\HeaderSelector;
+use TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * QualificationDocumentsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,11 +92,11 @@ class QualificationDocumentsApi
      *
      * @param  string $company_id company_id (required)
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\QualificationDocumentSearchCriteriaInputDto $input_dto input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\QualificationDocumentSearchCriteriaInputDto $input_dto input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageInt32
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageInt32
      */
     public function count($company_id, $virtual_operator, $input_dto = null)
     {
@@ -109,15 +109,15 @@ class QualificationDocumentsApi
      *
      * @param  string $company_id (required)
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageInt32, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageInt32, HTTP status code, HTTP response headers (array of strings)
      */
     public function countWithHttpInfo($company_id, $virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageInt32';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageInt32';
         $request = $this->countRequest($company_id, $virtual_operator, $input_dto);
 
         try {
@@ -169,7 +169,7 @@ class QualificationDocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageInt32',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageInt32',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -177,7 +177,7 @@ class QualificationDocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageInt32',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageInt32',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -194,7 +194,7 @@ class QualificationDocumentsApi
      *
      * @param  string $company_id (required)
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,14 +216,14 @@ class QualificationDocumentsApi
      *
      * @param  string $company_id (required)
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function countAsyncWithHttpInfo($company_id, $virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageInt32';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageInt32';
         $request = $this->countRequest($company_id, $virtual_operator, $input_dto);
 
         return $this->client
@@ -268,7 +268,7 @@ class QualificationDocumentsApi
      *
      * @param  string $company_id (required)
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -395,9 +395,9 @@ class QualificationDocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageString
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageString
      */
     public function getStatus($virtual_operator, $document_id)
     {
@@ -411,13 +411,13 @@ class QualificationDocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageString, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageString, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStatusWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageString';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageString';
         $request = $this->getStatusRequest($virtual_operator, $document_id);
 
         try {
@@ -469,7 +469,7 @@ class QualificationDocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageString',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageString',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -477,7 +477,7 @@ class QualificationDocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageString',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageString',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -521,7 +521,7 @@ class QualificationDocumentsApi
      */
     public function getStatusAsyncWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageString';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageString';
         $request = $this->getStatusRequest($virtual_operator, $document_id);
 
         return $this->client
@@ -688,11 +688,11 @@ class QualificationDocumentsApi
      *
      * @param  string $company_id company_id (required)
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\QualificationDocumentSearchCriteriaInputDto $input_dto input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\QualificationDocumentSearchCriteriaInputDto $input_dto input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageListQualificationDocumentSearchOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageListQualificationDocumentSearchOutputDto
      */
     public function search($company_id, $virtual_operator, $input_dto = null)
     {
@@ -705,15 +705,15 @@ class QualificationDocumentsApi
      *
      * @param  string $company_id (required)
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageListQualificationDocumentSearchOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageListQualificationDocumentSearchOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchWithHttpInfo($company_id, $virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListQualificationDocumentSearchOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListQualificationDocumentSearchOutputDto';
         $request = $this->searchRequest($company_id, $virtual_operator, $input_dto);
 
         try {
@@ -765,7 +765,7 @@ class QualificationDocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListQualificationDocumentSearchOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListQualificationDocumentSearchOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -773,7 +773,7 @@ class QualificationDocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageListQualificationDocumentSearchOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageListQualificationDocumentSearchOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -790,7 +790,7 @@ class QualificationDocumentsApi
      *
      * @param  string $company_id (required)
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -812,14 +812,14 @@ class QualificationDocumentsApi
      *
      * @param  string $company_id (required)
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function searchAsyncWithHttpInfo($company_id, $virtual_operator, $input_dto = null)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageListQualificationDocumentSearchOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageListQualificationDocumentSearchOutputDto';
         $request = $this->searchRequest($company_id, $virtual_operator, $input_dto);
 
         return $this->client
@@ -864,7 +864,7 @@ class QualificationDocumentsApi
      *
      * @param  string $company_id (required)
      * @param  string $virtual_operator MaxLength: 60 (required)
-     * @param  \Swagger\Client\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
+     * @param  \TM\Saphety\Clientv2\Model\QualificationDocumentSearchCriteriaInputDto $input_dto (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -991,9 +991,9 @@ class QualificationDocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ResultMessageQualificationDocumentStatusOutputDto
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageQualificationDocumentStatusOutputDto
      */
     public function synchQualificationStatus($virtual_operator, $document_id)
     {
@@ -1007,13 +1007,13 @@ class QualificationDocumentsApi
      * @param  string $virtual_operator MaxLength: 60 (required)
      * @param  string $document_id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ResultMessageQualificationDocumentStatusOutputDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageQualificationDocumentStatusOutputDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function synchQualificationStatusWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageQualificationDocumentStatusOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageQualificationDocumentStatusOutputDto';
         $request = $this->synchQualificationStatusRequest($virtual_operator, $document_id);
 
         try {
@@ -1065,7 +1065,7 @@ class QualificationDocumentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageQualificationDocumentStatusOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageQualificationDocumentStatusOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1073,7 +1073,7 @@ class QualificationDocumentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ResultMessageQualificationDocumentStatusOutputDto',
+                        '\TM\Saphety\Clientv2\Model\ResultMessageQualificationDocumentStatusOutputDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1117,7 +1117,7 @@ class QualificationDocumentsApi
      */
     public function synchQualificationStatusAsyncWithHttpInfo($virtual_operator, $document_id)
     {
-        $returnType = '\Swagger\Client\Model\ResultMessageQualificationDocumentStatusOutputDto';
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageQualificationDocumentStatusOutputDto';
         $request = $this->synchQualificationStatusRequest($virtual_operator, $document_id);
 
         return $this->client

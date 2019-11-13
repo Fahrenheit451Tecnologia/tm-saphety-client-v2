@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace TM\Saphety\Clientv2\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \TM\Saphety\Clientv2\ObjectSerializer;
 
 /**
  * CustomerPartyInputDto Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  TM\Saphety\Clientv2
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,16 +58,16 @@ class CustomerPartyInputDto implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'tele_fax' => 'string',
-        'document_contacts' => '\Swagger\Client\Model\DocumentContactInputDto[]',
+        'document_contacts' => '\TM\Saphety\Clientv2\Model\DocumentContactInputDto[]',
         'gln' => 'string',
         'legal_type' => 'string',
-        'identification' => '\Swagger\Client\Model\IdentificationInputDto',
+        'identification' => '\TM\Saphety\Clientv2\Model\IdentificationInputDto',
         'name' => 'string',
         'website_url' => 'string',
         'email' => 'string',
-        'address' => '\Swagger\Client\Model\AddressInputDto',
+        'address' => '\TM\Saphety\Clientv2\Model\AddressInputDto',
         'tax_scheme' => 'string',
-        'person' => '\Swagger\Client\Model\PersonInputDto',
+        'person' => '\TM\Saphety\Clientv2\Model\PersonInputDto',
         'industry' => 'string',
         'responsability_types' => 'string[]'
     ];
@@ -341,7 +341,7 @@ class CustomerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets document_contacts
      *
-     * @return \Swagger\Client\Model\DocumentContactInputDto[]
+     * @return \TM\Saphety\Clientv2\Model\DocumentContactInputDto[]
      */
     public function getDocumentContacts()
     {
@@ -351,7 +351,7 @@ class CustomerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets document_contacts
      *
-     * @param \Swagger\Client\Model\DocumentContactInputDto[] $document_contacts document_contacts
+     * @param \TM\Saphety\Clientv2\Model\DocumentContactInputDto[] $document_contacts document_contacts
      *
      * @return $this
      */
@@ -417,7 +417,7 @@ class CustomerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets identification
      *
-     * @return \Swagger\Client\Model\IdentificationInputDto
+     * @return \TM\Saphety\Clientv2\Model\IdentificationInputDto
      */
     public function getIdentification()
     {
@@ -427,7 +427,7 @@ class CustomerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets identification
      *
-     * @param \Swagger\Client\Model\IdentificationInputDto $identification identification
+     * @param \TM\Saphety\Clientv2\Model\IdentificationInputDto $identification identification
      *
      * @return $this
      */
@@ -525,7 +525,7 @@ class CustomerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\AddressInputDto
+     * @return \TM\Saphety\Clientv2\Model\AddressInputDto
      */
     public function getAddress()
     {
@@ -535,7 +535,7 @@ class CustomerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\AddressInputDto $address address
+     * @param \TM\Saphety\Clientv2\Model\AddressInputDto $address address
      *
      * @return $this
      */
@@ -573,7 +573,7 @@ class CustomerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Gets person
      *
-     * @return \Swagger\Client\Model\PersonInputDto
+     * @return \TM\Saphety\Clientv2\Model\PersonInputDto
      */
     public function getPerson()
     {
@@ -583,7 +583,7 @@ class CustomerPartyInputDto implements ModelInterface, ArrayAccess
     /**
      * Sets person
      *
-     * @param \Swagger\Client\Model\PersonInputDto $person person
+     * @param \TM\Saphety\Clientv2\Model\PersonInputDto $person person
      *
      * @return $this
      */
