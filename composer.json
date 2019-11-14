@@ -1,18 +1,19 @@
 {
-    "name": "GIT_USER_ID/GIT_REPO_ID",
-    "description": "",
+    "name": "timemanager/tm-saphety-client-v2",
+    "description": "Library to connect to Saphety billing API v2 for Colombia",
+    "version": "1.0.1",
     "keywords": [
         "swagger",
         "php",
         "sdk",
         "api"
     ],
-    "homepage": "http://swagger.io",
+    "homepage": "https://www.timemanagerweb.com",
     "license": "proprietary",
     "authors": [
         {
-            "name": "Swagger and contributors",
-            "homepage": "https://github.com/swagger-api/swagger-codegen"
+            "name": "Openatlas",
+            "homepage": "https://www.timemanagerweb.com"
         }
     ],
     "require": {
@@ -28,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~2.12"
     },
     "autoload": {
-        "psr-4": { "Swagger\\Client\\" : "lib/" }
+        "psr-4": { "TM\\Saphety\\Clientv2\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Swagger\\Client\\" : "test/" }
+        "psr-4": { "TM\\Saphety\\Clientv2\\" : "test/" }
     }
 }
