@@ -1131,6 +1131,8 @@ class DocumentsApiCreation
             try {
                 $response = $this->client->send($request, $options);
             } catch (RequestException $e) {
+                var_dump("1234");
+                var_dump($e->getResponse()->getBody()->getContents());
                 throw new ApiException(
                     "[{$e->getCode()}] {$e->getMessage()}",
                     $e->getCode(),
