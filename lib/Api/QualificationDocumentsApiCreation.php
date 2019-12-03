@@ -735,8 +735,6 @@ class QualificationDocumentsApiCreation
             try {
                 $response = $this->client->send($request, $options);
             } catch (RequestException $e) {
-                var_dump("AQUI");
-                var_dump($e->getResponse()->getBody()->getContents());
                 throw new ApiException(
                     "[{$e->getCode()}] {$e->getMessage()}",
                     $e->getCode(),
