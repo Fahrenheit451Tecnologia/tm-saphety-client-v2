@@ -1614,4 +1614,325 @@ class DocumentsApiCreation
 
         return $options;
     }
+
+    /**
+     * Operation addAttachment
+     *
+     * Adds a manual attachment to the outbound document
+     *
+     * @param  string $virtual_operator MaxLength: 60 (required)
+     * @param  string $id  (required)
+     * @param  \TM\Saphety\Clientv2\Model\FileUploadInputDto $attachment  (required)
+     *
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return \TM\Saphety\Clientv2\Model\ResultMessageGuid
+     */
+    public function addAttachment($virtual_operator, $id, $attachment)
+    {
+        list($response) = $this->addAttachmentWithHttpInfo($virtual_operator, $id, $attachment);
+        return $response;
+    }
+
+
+    /**
+     * Operation addAttachmentWithHttpInfo
+     *
+     * Adds a manual attachment to the outbound document
+     *
+     * @param  string $virtual_operator MaxLength: 60 (required)
+     * @param  string $id  (required)
+     * @param  \TM\Saphety\Clientv2\Model\FileUploadInputDto $attachment  (required)
+     *
+     * @throws \TM\Saphety\Clientv2\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return array of \TM\Saphety\Clientv2\Model\ResultMessageGuid, HTTP status code, HTTP response headers (array of strings)
+     */
+    public function addAttachmentWithHttpInfo($virtual_operator, $id, $attachment)
+    {
+        $returnType = '\TM\Saphety\Clientv2\Model\ResultMessageGuid';
+        $request = $this->addAttachmentRequest($virtual_operator, $id, $attachment);
+
+        try {
+            $options = $this->createHttpClientOption();
+            try {
+                $response = $this->client->send($request, $options);
+            } catch (RequestException $e) {
+                throw new ApiException(
+                    "[{$e->getCode()}] {$e->getMessage()}",
+                    $e->getCode(),
+                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
+                    $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null
+                );
+            }
+
+            $statusCode = $response->getStatusCode();
+
+            if ($statusCode < 200 || $statusCode > 299) {
+                throw new ApiException(
+                    sprintf(
+                        '[%d] Error connecting to the API (%s)',
+                        $statusCode,
+                        $request->getUri()
+                    ),
+                    $statusCode,
+                    $response->getHeaders(),
+                    $response->getBody()
+                );
+            }
+
+            $responseBody = $response->getBody();
+            if ($returnType === '\SplFileObject') {
+                $content = $responseBody; //stream goes to serializer
+            } else {
+                $content = $responseBody->getContents();
+                if ($returnType !== 'string') {
+                    $content = json_decode($content);
+                }
+            }
+
+            return [
+                ObjectSerializer::deserialize($content, $returnType, []),
+                $response->getStatusCode(),
+                $response->getHeaders()
+            ];
+
+        } catch (ApiException $e) {
+            switch ($e->getCode()) {
+                case 200:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\Swagger\Client\Model\ResultMessageGuid',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 400:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\Swagger\Client\Model\ResultMessageGuid',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+            }
+            throw $e;
+        }
+    }
+
+    /**
+     * Operation addAttachmentAsync
+     *
+     * Adds a manual attachment to the outbound document
+     *
+     * @param  string $virtual_operator MaxLength: 60 (required)
+     * @param  string $id  (required)
+     * @param  \TM\Saphety\Clientv2\Model\FileUploadInputDto $attachment  (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function addAttachmentAsync($virtual_operator, $id, $attachment)
+    {
+        return $this->addAttachmentAsyncWithHttpInfo($virtual_operator, $id, $attachment)
+            ->then(
+                function ($response) {
+                    return $response[0];
+                }
+            );
+    }
+
+    /**
+     * Operation addAttachmentAsyncWithHttpInfo
+     *
+     * Adds a manual attachment to the outbound document
+     *
+     * @param  string $virtual_operator MaxLength: 60 (required)
+     * @param  string $id  (required)
+     * @param  \TM\Saphety\Clientv2\Model\FileUploadInputDto $attachment  (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function addAttachmentAsyncWithHttpInfo($virtual_operator, $id, $attachment)
+    {
+        $returnType = ' \TM\Saphety\Clientv2\Model\ResultMessageGuid';
+        $request = $this->addAttachmentRequest($virtual_operator, $id, $attachment);
+
+        return $this->client
+            ->sendAsync($request, $this->createHttpClientOption())
+            ->then(
+                function ($response) use ($returnType) {
+                    $responseBody = $response->getBody();
+                    if ($returnType === '\SplFileObject') {
+                        $content = $responseBody; //stream goes to serializer
+                    } else {
+                        $content = $responseBody->getContents();
+                        if ($returnType !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, $returnType, []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                },
+                function ($exception) {
+                    $response = $exception->getResponse();
+                    $statusCode = $response->getStatusCode();
+                    throw new ApiException(
+                        sprintf(
+                            '[%d] Error connecting to the API (%s)',
+                            $statusCode,
+                            $exception->getRequest()->getUri()
+                        ),
+                        $statusCode,
+                        $response->getHeaders(),
+                        $response->getBody()
+                    );
+                }
+            );
+    }
+
+    /**
+     * Create request for operation 'addAttachment'
+     *
+     * @param  string $virtual_operator MaxLength: 60 (required)
+     * @param  string $id  (required)
+     * @param  \TM\Saphety\Clientv2\Model\FileUploadInputDto $attachment  (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Psr7\Request
+     */
+    protected function addAttachmentRequest($virtual_operator, $id, $attachment)
+    {
+        // verify the required parameter 'virtual_operator' is set
+        if ($virtual_operator === null || (is_array($virtual_operator) && count($virtual_operator) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $virtual_operator when calling addAttachment'
+            );
+        }
+        if (strlen($virtual_operator) > 60) {
+            throw new \InvalidArgumentException('invalid length for "$virtual_operator" when calling DocumentsApi.addAttachment, must be smaller than or equal to 60.');
+        }
+
+        // verify the required parameter 'id' is set
+        if ($id === null || (is_array($id) && count($id) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $id when calling addAttachment'
+            );
+        }
+        // verify the required parameter 'attachment' is set
+        if ($attachment === null || (is_array($attachment) && count($attachment) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $attachment when calling addAttachment'
+            );
+        }
+
+        $resourcePath = '/v2/{virtualOperator}/outbounddocuments/{id}/attachments';
+        $formParams = [];
+        $queryParams = [];
+        $headerParams = [];
+        $httpBody = '';
+        $multipart = false;
+
+
+        // path params
+        if ($virtual_operator !== null) {
+            $resourcePath = str_replace(
+                '{' . 'virtualOperator' . '}',
+                ObjectSerializer::toPathValue($virtual_operator),
+                $resourcePath
+            );
+        }
+        // path params
+        if ($id !== null) {
+            $resourcePath = str_replace(
+                '{' . 'id' . '}',
+                ObjectSerializer::toPathValue($id),
+                $resourcePath
+            );
+        }
+
+        // body params
+        $_tempBody = null;
+        if (isset($attachment)) {
+            $_tempBody = $attachment;
+        }
+
+        if ($multipart) {
+            $headers = $this->headerSelector->selectHeadersForMultipart(
+                ['application/json']
+            );
+        } else {
+            $headers = $this->headerSelector->selectHeaders(
+                ['application/json'],
+                ['application/json']
+            );
+        }
+
+        // for model (json/xml)
+        if (isset($_tempBody)) {
+            // $_tempBody is the method argument, if present
+            $httpBody = $_tempBody;
+
+            if($headers['Content-Type'] === 'application/json') {
+                // \stdClass has no __toString(), so we should encode it manually
+                if ($httpBody instanceof \stdClass) {
+                    $httpBody = \GuzzleHttp\json_encode($httpBody);
+                }
+                // array has no __toString(), so we should encode it manually
+                if(is_array($httpBody)) {
+                    $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($httpBody));
+                }
+            }
+        } elseif (count($formParams) > 0) {
+            if ($multipart) {
+                $multipartContents = [];
+                foreach ($formParams as $formParamName => $formParamValue) {
+                    $multipartContents[] = [
+                        'name' => $formParamName,
+                        'contents' => $formParamValue
+                    ];
+                }
+                // for HTTP post (form)
+                $httpBody = new MultipartStream($multipartContents);
+
+            } elseif ($headers['Content-Type'] === 'application/json') {
+                $httpBody = \GuzzleHttp\json_encode($formParams);
+
+            } else {
+                // for HTTP post (form)
+                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+            }
+        }
+
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
+        if ($apiKey !== null) {
+            $headers['Authorization'] = $apiKey;
+        }
+
+        $defaultHeaders = [];
+        if ($this->config->getUserAgent()) {
+            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
+        }
+
+        $headers = array_merge(
+            $defaultHeaders,
+            $headerParams,
+            $headers
+        );
+
+        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        return new Request(
+            'POST',
+            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
+            $headers,
+            $httpBody
+        );
+    }
+
 }
